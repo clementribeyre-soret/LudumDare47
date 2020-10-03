@@ -512,6 +512,8 @@ MonoBehaviour:
   instrumentTitlePanel: {fileID: 6351608167256946152}
   instrumentTitlePrefab: {fileID: 8717440530382461803, guid: c5731e177bff9f14f8cafc365716eeac, type: 3}
   gridLayout: {fileID: 6351608167358171047}
+  player: {fileID: 0}
+  beatPlayerName: Ship
 --- !u!114 &6351608167899848656
 MonoBehaviour:
   m_ObjectHideFlags: 0

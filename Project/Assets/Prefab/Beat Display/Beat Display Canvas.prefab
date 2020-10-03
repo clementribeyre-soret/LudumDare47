@@ -90,6 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratio: 0
   target: {fileID: 8763557853327659822}
+  player: {fileID: 0}
 --- !u!1 &3393171280122760208
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3393171280122760212}
     m_Modifications:
+    - target: {fileID: 6040453824877635056, guid: fd8ca15d84fc588439e7f166ecc954f5, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 3393171280058525659}
     - target: {fileID: 6040453824877635060, guid: fd8ca15d84fc588439e7f166ecc954f5, type: 3}
       propertyPath: m_Enabled
       value: 0

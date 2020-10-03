@@ -131,3 +131,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepPrefab: {fileID: 226703706851165794, guid: 9e1111690e0e40e4488f004159296e8e, type: 3}
+  player: {fileID: 0}
+  beatPlayerName: Ship
