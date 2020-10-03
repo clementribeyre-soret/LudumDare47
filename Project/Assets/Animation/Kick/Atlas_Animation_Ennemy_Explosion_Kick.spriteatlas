@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Animation_Ennemy_Explosion_Kick
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4fdbba3f12517d845a950289dce59aab, type: 3}
+    totalSpriteSurfaceArea: 311296
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fa9fc160be6dac84d8a854fb0e17b943, type: 3}
+  - {fileID: 21300000, guid: 23e1e8c0229c32944b1df74cfb617762, type: 3}
+  - {fileID: 21300000, guid: 587aac81f7e9f7e449a3534631b5cfb1, type: 3}
+  - {fileID: 21300000, guid: 0a9ed7320102ae041986d1102dd56368, type: 3}
+  - {fileID: 21300000, guid: 259bd4e244021894192572f2de1764d3, type: 3}
+  - {fileID: 21300000, guid: 202c8f648d865054da4012ce057f5b01, type: 3}
+  - {fileID: 21300000, guid: 9f8c7c86d4dfe024d8a9f9c213c2650e, type: 3}
+  - {fileID: 21300000, guid: d742dcf65d7dc104596c2bc922c0c343, type: 3}
+  - {fileID: 21300000, guid: ff5232288b9db7848b72add95310ffd3, type: 3}
+  - {fileID: 21300000, guid: 341ee219394350b478045d760d099fdf, type: 3}
+  - {fileID: 21300000, guid: ec313619f7eeffb47846f88073d9006f, type: 3}
+  - {fileID: 21300000, guid: f486eae987197a24dbdf3fa609033576, type: 3}
+  - {fileID: 21300000, guid: 64c55b5be691c064081e655fa2414560, type: 3}
+  - {fileID: 21300000, guid: 0ed79e5baad19ce498407ecb410a28f6, type: 3}
+  - {fileID: 21300000, guid: d443c3cc79c21204197450dee18d6a5d, type: 3}
+  - {fileID: 21300000, guid: ef20556d058b7bb4e9a55136961bb356, type: 3}
+  - {fileID: 21300000, guid: fcb807ed943df0b4481f411071e70f43, type: 3}
+  - {fileID: 21300000, guid: ff96c6ee263919f42a39464058b7688a, type: 3}
+  - {fileID: 21300000, guid: 9485e28f9a74eb044b8c251acb7ade62, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Animation_Ennemy_Explosion_Kick_16
+  - Animation_Ennemy_Explosion_Kick_13
+  - Animation_Ennemy_Explosion_Kick_15
+  - Animation_Ennemy_Explosion_Kick_18
+  - Animation_Ennemy_Explosion_Kick_11
+  - Animation_Ennemy_Explosion_Kick_01
+  - Animation_Ennemy_Explosion_Kick_14
+  - Animation_Ennemy_Explosion_Kick_12
+  - Animation_Ennemy_Explosion_Kick_06
+  - Animation_Ennemy_Explosion_Kick_09
+  - Animation_Ennemy_Explosion_Kick_08
+  - Animation_Ennemy_Explosion_Kick_17
+  - Animation_Ennemy_Explosion_Kick_07
+  - Animation_Ennemy_Explosion_Kick_10
+  - Animation_Ennemy_Explosion_Kick_05
+  - Animation_Ennemy_Explosion_Kick_03
+  - Animation_Ennemy_Explosion_Kick_04
+  - Animation_Ennemy_Explosion_Kick_02
+  - Animation_Ennemy_Explosion_Kick_00
+  m_Tag: Atlas_Animation_Ennemy_Explosion_Kick
+  m_IsVariant: 0
