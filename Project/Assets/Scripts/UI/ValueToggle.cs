@@ -17,7 +17,7 @@ public class ValueToggle : MonoBehaviour
     {
         toggle = GetComponent<Toggle>();
         toggle.onValueChanged.AddListener(delegate {
-                SetChecked(toggle);
+            SetChecked(toggle.isOn);
         });
     }
 
