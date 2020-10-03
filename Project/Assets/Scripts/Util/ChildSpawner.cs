@@ -15,4 +15,9 @@ public class ChildSpawner : MonoBehaviour
     {
         Instantiate(prefab, transform.position, transform.rotation, parent);
     }
+
+    public void Spawn()
+    {
+        Instantiate(prefab, transform.position, transform.rotation);
+    }
 }

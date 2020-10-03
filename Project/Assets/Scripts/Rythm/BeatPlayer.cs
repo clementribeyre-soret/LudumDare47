@@ -5,8 +5,6 @@ using UnityEngine;
 public class BeatPlayer : MonoBehaviour
 {
     public BeatLoop loop;
-    private AudioSource[] sources;
-    public AudioSource sourcePrefab;
     private float musicLastTime = 0;
     public bool resetLoop = true;
 
@@ -18,21 +16,20 @@ public class BeatPlayer : MonoBehaviour
 
     private void Awake()
     {
-        registered.Add(gameObject.name, this);
+        registered[gameObject.name] = this;
     }
 
     void Start()
     {
         if(resetLoop)
             loop.loopContent = new bool[loop.stepCount * BeatService.instance.beats.Length];
-        sources = new AudioSource[BeatService.instance.beats.Length];
-        for(int i=0; i<BeatService.instance.beats.Length; i++)
-        {
-            sources[i] = Instantiate(sourcePrefab, transform);
-            sources[i].clip = BeatService.instance.beats[i].sound;
-        }
 
         BeatService.instance.onBeat += OnBeat;
+    }
+
+    void OnDestroy()
+    {
+        BeatService.instance.onBeat -= OnBeat;
     }
 
     void OnBeat(int beatIndex)
@@ -43,7 +40,6 @@ public class BeatPlayer : MonoBehaviour
             if(loop.loopContent[i * loop.stepCount + beatIndex % loop.stepCount])
             {
                 configs.Add(BeatService.instance.beats[i]);
-                sources[i].Play();
             }
         }
         onBeat?.Invoke(configs);

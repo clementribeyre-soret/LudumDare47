@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class ProjectileSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Projectile prefab;
+    private Health health;
+
+    private void Start()
     {
-        
+        health = GetComponentInParent<Health>();
+    }
+    
+    public void SpawnChild()
+    {
+        Projectile spawned = Instantiate(prefab, transform);
+        spawned.team = health.team;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpawnWithParent(Transform parent)
     {
-        
+        Projectile spawned = Instantiate(prefab, transform.position, transform.rotation, parent);
+        spawned.team = health.team;
+    }
+
+    public void Spawn()
+    {
+        Projectile spawned = Instantiate(prefab, transform.position, transform.rotation);
+        spawned.team = health.team;
     }
 }
