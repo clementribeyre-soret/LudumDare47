@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class BeatConfig : ScriptableObject
 {
-    public string name;
+    public new string name;
     public AudioClip sound;
     public Sprite icon;
 }
