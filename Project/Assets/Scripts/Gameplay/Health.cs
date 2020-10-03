@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int maxHealth = 3;
     private float currentHealth;
     public UnityEvent onDeath;
+    public System.Action<Health> onDeathDelegate;
     
     private void Start()
     {
@@ -17,8 +18,9 @@ public class Health : MonoBehaviour
     public void Damage(float damage)
     {
         currentHealth -= damage;
-        if(currentHealth < damage)
+        if(currentHealth < 0)
         {
+            onDeathDelegate?.Invoke(this);
             onDeath.Invoke();
         }
     }

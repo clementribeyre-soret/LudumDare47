@@ -18,6 +18,9 @@ public class BeatService : MonoBehaviour
 
     public float loopRatio { get {return (time + beatIndex * 60 / bpm) / (stepCount * 60 / bpm);}}
 
+    public MusicPlayer musicPlayer;
+    private float musicLastTime = 0;
+
     public System.Action<List<BeatConfig>> onBeat;
     
     void Start()
@@ -29,11 +32,14 @@ public class BeatService : MonoBehaviour
             sources[i] = Instantiate(sourcePrefab, transform);
             sources[i].clip = beats[i].sound;
         }
+
     }
 
     void Update()
     {
-        time += Time.deltaTime;
+        float musicTime = musicPlayer.time;
+        time += musicTime - musicLastTime;
+        musicLastTime = musicTime;
         if(time > 60 / bpm)
         {
             beatIndex = (beatIndex + 1) % stepCount;
