@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
         if(health != null)
         {
             health.Damage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }

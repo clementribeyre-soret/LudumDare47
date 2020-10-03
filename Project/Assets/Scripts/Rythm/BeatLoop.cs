@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public struct Loop
+[CreateAssetMenu]
+public class BeatLoop : ScriptableObject
 {
+    public int stepCount;
     public bool[] loopContent;
 }

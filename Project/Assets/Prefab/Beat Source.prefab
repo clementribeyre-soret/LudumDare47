@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6589645273293194762}
   - component: {fileID: 6589645273293194761}
-  - component: {fileID: 5527318657357311021}
   m_Layer: 0
   m_Name: Beat Source
   m_TagString: Untagged
@@ -128,22 +127,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5527318657357311021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6589645273293194760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9230d3b833f5164094510634ff71672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beats: []
-  stepCount: 0
-  bpm: 0
-  loop:
-    beats: []
-    loopContent: 
-  sourcePrefab: {fileID: 0}
