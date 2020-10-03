@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 181c07e6c5106d342b4e6b267f3cccf8, type: 3}
-  m_Name: Kick
+  m_Name: Clap
   m_EditorClassIdentifier: 
-  name: Kick
-  sound: {fileID: 8300000, guid: d752064f472d231468d3b9c9c57b2da8, type: 3}
+  name: Clap
+  sound: {fileID: 8300000, guid: 60bfbd4f89beac842bdb48b458e40c52, type: 3}
   icon: {fileID: 0}

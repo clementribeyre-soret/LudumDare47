@@ -5,28 +5,35 @@ using UnityEngine.UI;
 
 public class BeatMaker : MonoBehaviour
 {
-    public BeatLoop loop;
     public ValueToggle buttonPrefab;
+    public Transform instrumentTitlePanel;
+    public Text instrumentTitlePrefab;
 
     public GridLayoutGroup gridLayout;
     private ValueToggle[] toggles;
 
     void Start()
     {
-        gridLayout.constraintCount = loop.stepCount;
-        toggles = new ValueToggle[loop.beats.Length * loop.stepCount];
-        for(int i=0; i<loop.beats.Length * loop.stepCount; i++)
+        int stepCount = BeatService.instance.stepCount;
+        BeatConfig[] beats = BeatService.instance.beats;
+        gridLayout.constraintCount = stepCount;
+        toggles = new ValueToggle[beats.Length * stepCount];
+        for(int i=0; i<beats.Length * stepCount; i++)
         {
             ValueToggle toggle = Instantiate(buttonPrefab, gridLayout.transform);
             toggles[i] = toggle;
             toggle.index = i;
             toggle.valueChanged += OnValueChanged;
         }
+        for(int i=0; i<beats.Length; i++)
+        {
+            Instantiate(instrumentTitlePrefab, instrumentTitlePanel).text = beats[i].name;
+        }
     }
 
     private void OnValueChanged(ValueToggle toggle)
     {
-        loop.loop.loopContent[toggle.index] = toggle.isChecked;
+        BeatService.instance.loop.loopContent[toggle.index] = toggle.isChecked;
     }
 
     void Update()
