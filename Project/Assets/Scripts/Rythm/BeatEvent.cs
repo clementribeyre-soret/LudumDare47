@@ -8,14 +8,16 @@ public class BeatEvent : MonoBehaviour
     public BeatConfig config;
     public UnityEvent onBeat;
 
+    public BeatPlayer beatPlayer;
+
     private void Start()
     {
-        BeatService.instance.onBeat += OnBeat;
+        beatPlayer.onBeat += OnBeat;
     }
 
     private void OnDestroy()
     {
-        BeatService.instance.onBeat -= OnBeat;
+        beatPlayer.onBeat -= OnBeat;
     }
     
     private void OnBeat(List<BeatConfig> beats)

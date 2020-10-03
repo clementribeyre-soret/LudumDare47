@@ -26,4 +26,11 @@ public class ValueToggle : MonoBehaviour
         this.isChecked = isChecked;
         valueChanged?.Invoke(this);
     }
+
+    public void ForceChecked(bool isChecked)
+    {
+        toggle = GetComponent<Toggle>();
+        this.isChecked = isChecked;
+        toggle.isOn = this.isChecked;
+    }
 }

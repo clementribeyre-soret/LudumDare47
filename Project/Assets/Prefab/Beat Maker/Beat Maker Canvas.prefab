@@ -190,6 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratio: 0
   target: {fileID: 7928310817647793857}
+  player: {fileID: 0}
 --- !u!1001 &3900809244132381028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -257,6 +258,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6351608167899848657, guid: bf4f3c829c8d3354bb573ce67d5cb484, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 9073195646107211529}
     - target: {fileID: 6351608167899848668, guid: bf4f3c829c8d3354bb573ce67d5cb484, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

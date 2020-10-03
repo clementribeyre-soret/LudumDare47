@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4298864060733344101}
   - component: {fileID: 4298864060733344102}
   - component: {fileID: 4298864060733344097}
+  - component: {fileID: 6993832418089563849}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -116,6 +117,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  beatPlayer: {fileID: 0}
 --- !u!114 &4298864060733344102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +144,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &6993832418089563849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4298864060733344098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c02c0e4f2fc6d34e97aae91264855b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loop: {fileID: 11400000, guid: e5e1b18d41b096c48b03261ec178e49a, type: 2}
+  resetLoop: 1
 --- !u!1 &4298864061064437503
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4298864061064437502}
   - component: {fileID: 4298864061064437500}
-  - component: {fileID: 4298864061064437501}
+  - component: {fileID: 8344624876679011359}
   m_Layer: 0
   m_Name: Cannon Right
   m_TagString: Untagged
@@ -190,7 +206,7 @@ MonoBehaviour:
   onBeat:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4298864061064437501}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ChildSpawner, Assembly-CSharp
         m_MethodName: SpawnWithParent
         m_Mode: 2
@@ -202,7 +218,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4298864061064437501
+  beatPlayer: {fileID: 6993832418089563849}
+--- !u!114 &8344624876679011359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,10 +228,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4298864061064437503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62eda5b67e97b1d40a9fff3c6391991f, type: 3}
+  m_Script: {fileID: 11500000, guid: c55220a9f1165e14794a8523b956090d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 599212682047153005, guid: 9e11311d109e4b345a2ac22afaa868d2, type: 3}
+  prefab: {fileID: 4947639650534252350, guid: 9e11311d109e4b345a2ac22afaa868d2, type: 3}
 --- !u!1 &4298864061602597478
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +292,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  beatPlayer: {fileID: 6993832418089563849}
 --- !u!114 &4298864061602597476
 MonoBehaviour:
   m_ObjectHideFlags: 0
