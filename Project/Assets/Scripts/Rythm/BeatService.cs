@@ -12,7 +12,7 @@ public class BeatService : MonoBehaviour
     public float bpm;
     private float time;
     private int beatIndex = 0;
-    public Loop loop;
+    public BeatLoop loop;
     private AudioSource[] sources;
     public AudioSource sourcePrefab;
 
@@ -25,7 +25,7 @@ public class BeatService : MonoBehaviour
     
     void Start()
     {
-        loop.loopContent = new bool[stepCount * beats.Length];
+        loop.loopContent = new bool[loop.stepCount * beats.Length];
         sources = new AudioSource[beats.Length];
         for(int i=0; i<beats.Length; i++)
         {
