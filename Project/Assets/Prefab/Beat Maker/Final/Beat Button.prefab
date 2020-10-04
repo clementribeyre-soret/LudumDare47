@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatImage: {fileID: 873457229563937176}
+  checkedImage: {fileID: 3188390800910392270}
   fadeOutTime: 0
   fadeOutDuration: 0.8
 --- !u!114 &6828723970278738951
