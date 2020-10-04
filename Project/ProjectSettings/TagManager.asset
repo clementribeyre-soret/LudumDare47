@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 
@@ -40,6 +40,15 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3853966525
+    locked: 0
+  - name: Enemy_Melee
+    uniqueID: 3423337135
+    locked: 0
+  - name: Enemy_02
+    uniqueID: 873954029
+    locked: 0
+  - name: Enemy_03
+    uniqueID: 3593027057
     locked: 0
   - name: Default
     uniqueID: 0
