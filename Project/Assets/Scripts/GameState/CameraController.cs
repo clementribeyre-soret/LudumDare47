@@ -31,13 +31,18 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        mainCamera.transform.position = currentScreen.transform.position;
-        mainCamera.orthographicSize = currentScreen.cameraSize;
-        currentScreen.onScreenEnter?.Invoke();
     }
 
+private bool started = false;
     private void Update()
     {
+        if(!started)
+        {
+            mainCamera.transform.position = currentScreen.transform.position;
+            mainCamera.orthographicSize = currentScreen.cameraSize;
+            currentScreen.onScreenEnter?.Invoke();
+            started = true;
+        }
         if(targetScreen != null && transitionTime < transitionDuration)
         {
             transitionTime += Time.deltaTime;
