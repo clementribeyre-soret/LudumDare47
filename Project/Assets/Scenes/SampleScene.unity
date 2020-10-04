@@ -215,9 +215,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beats:
   - {fileID: 11400000, guid: 42c05749c98f07f428a459c571edff74, type: 2}
-  - {fileID: 11400000, guid: a713e46863cf58e459c36c019a51d20e, type: 2}
-  - {fileID: 11400000, guid: 088467466f4523542adb0b00b027f1a0, type: 2}
-  - {fileID: 11400000, guid: d3d9591a887511945bb61e5238c58a05, type: 2}
+  - {fileID: 11400000, guid: 826cc44a3534b72438c5627106e468a0, type: 2}
+  - {fileID: 11400000, guid: 37c18299340ed2943815b959e71f568f, type: 2}
+  - {fileID: 11400000, guid: 4cf68294b27c9924883b426e48e12209, type: 2}
   bpm: 240
   sourcePrefab: {fileID: 6589645273293194761, guid: e9e4c2bbbf8072945b4f778e172e4654, type: 3}
   musicPlayer: {fileID: 836612182}
@@ -530,7 +530,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eef1f5e4fe030af47bd6fc153974b456, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8ec88df368707c64e9ffee21c10a66a3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

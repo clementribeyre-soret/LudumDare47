@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Bell
   sound: {fileID: 8300000, guid: c3500e7c4001ca2418205124b0b3cc8b, type: 3}
   icon: {fileID: 0}
+  color: {r: 1, g: 0.9529412, b: 0, a: 1}
