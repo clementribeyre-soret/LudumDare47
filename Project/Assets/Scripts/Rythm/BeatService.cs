@@ -28,6 +28,12 @@ public class BeatService : MonoBehaviour
     void Update()
     {
         float musicTime = musicPlayer.time;
+        if(musicLastTime > musicTime)
+        {
+            musicLastTime = 0;
+            _time = 0;
+            beatIndex = 0;
+        }
         _time += musicTime - musicLastTime;
         musicLastTime = musicTime;
         if(_time > 60 / bpm)
@@ -37,5 +43,10 @@ public class BeatService : MonoBehaviour
             onBeat?.Invoke(beatIndex);
 
         }
+    }
+
+    public void PlayMusic(AudioClip music)
+    {
+        musicPlayer.Play(music);
     }
 }
