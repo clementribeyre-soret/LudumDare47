@@ -10,10 +10,21 @@ public class EnemySpawner : MonoBehaviour
     private int aliveSpawnedCount;
     public float spacing = 1;
 
+    private bool mustSpawnNextWave = false;
+
     
     void Start()
     {
         SpawnRandomWave();
+    }
+
+    void Update()
+    {
+        if(mustSpawnNextWave)
+        {
+            mustSpawnNextWave = false;
+            SpawnRandomWave();
+        }
     }
 
     void SpawnRandomWave()
@@ -34,6 +45,6 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnElements.Remove(ship);
         if(spawnElements.Count == 0)
-            SpawnRandomWave();
+            mustSpawnNextWave = true;
     }
 }
