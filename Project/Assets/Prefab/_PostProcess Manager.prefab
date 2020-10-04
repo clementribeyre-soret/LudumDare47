@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2494143962033751530
+--- !u!1 &42593127261153638
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2494143962033751529}
-  - component: {fileID: 2494143962033751528}
-  m_Layer: 0
-  m_Name: Spawner
+  - component: {fileID: 3052645089527365247}
+  - component: {fileID: 3468584869521711604}
+  m_Layer: 8
+  m_Name: _PostProcess Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2494143962033751529
+--- !u!4 &3052645089527365247
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2494143962033751530}
+  m_GameObject: {fileID: 42593127261153638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: -2.5513773, y: 0.41080236, z: -12.669902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2494143962033751528
+--- !u!114 &3468584869521711604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2494143962033751530}
+  m_GameObject: {fileID: 42593127261153638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0f866e77543904a9c1d141607053e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waves:
-  - {fileID: 11400000, guid: 0dab4c68c78d14848bc17e2d8f2932cd, type: 2}
-  - {fileID: 11400000, guid: c2f7dc48c30a2e64dabbb57ff26506ce, type: 2}
-  spacing: 1
+  sharedProfile: {fileID: 11400000, guid: 376081b0ff512e749ae13de7dca667b1, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0

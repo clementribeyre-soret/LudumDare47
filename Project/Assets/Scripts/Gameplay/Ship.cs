@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    public Transform shipRenderPrefab;
-
+    public float speed;
+    
     void Start()
     {
-        Instantiate(shipRenderPrefab, transform);
+        
     }
 
     void Update()
     {
-        
+        transform.position += speed * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * Time.deltaTime;
     }
 }
