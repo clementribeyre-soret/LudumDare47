@@ -4842,7 +4842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &3066905798934456910
 ParticleSystem:
@@ -14466,7 +14466,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &2038245468343758787
 ParticleSystem:
@@ -19278,7 +19278,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 11
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &2589061709796021608
 ParticleSystem:
@@ -24090,7 +24090,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &2575767626133688133
 ParticleSystem:
@@ -28904,6 +28904,8 @@ Transform:
   - {fileID: 7486145680064961299}
   - {fileID: 2422631128752097386}
   - {fileID: 7874796514877701740}
+  - {fileID: 2246311957102240336}
+  - {fileID: 497594898089421000}
   - {fileID: 4212518725500293250}
   - {fileID: 4905314649224836561}
   - {fileID: 5579256437448890229}
@@ -28911,8 +28913,6 @@ Transform:
   - {fileID: 6199632636558582058}
   - {fileID: 1235790538534505709}
   - {fileID: 7058605368089839219}
-  - {fileID: 2246311957102240336}
-  - {fileID: 497594898089421000}
   - {fileID: 903372626871419898}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -28964,7 +28964,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &7050984754713915484
 ParticleSystem:
@@ -33776,7 +33776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &2466551022461587832
 ParticleSystem:
@@ -38670,7 +38670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &6288905149986073827
 ParticleSystem:
@@ -43482,7 +43482,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 12
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &5493519185711565323
 ParticleSystem:
@@ -53106,7 +53106,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &7818737009443608140
 ParticleSystem:
