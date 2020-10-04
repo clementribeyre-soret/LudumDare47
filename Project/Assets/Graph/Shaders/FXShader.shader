@@ -55,6 +55,7 @@
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
+                float alpha = col.w;
                 if(col.x <= 0.5)
                 {
                     float ratio = col.x * 2;
@@ -66,6 +67,7 @@
                     col = lerp(_Color1, _Color2, ratio);
 
                 }
+                col.w = alpha;
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
