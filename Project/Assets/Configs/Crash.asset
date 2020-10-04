@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Crash
   sound: {fileID: 8300000, guid: 4f171b4f552bccb449ee7a12b45cea17, type: 3}
   icon: {fileID: 0}
-  color: {r: 0, g: 0.8054738, b: 1, a: 1}
+  color: {r: 0, g: 0.68616533, b: 1, a: 1}

@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Ride
   sound: {fileID: 8300000, guid: 58e621567ced9d642b9f91419ed96c22, type: 3}
   icon: {fileID: 0}
-  color: {r: 1, g: 0.9529412, b: 0, a: 1}
+  color: {r: 0, g: 0.8207547, b: 0.34531993, a: 1}

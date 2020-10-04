@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1739068325509197116}
   - component: {fileID: 5686715498963526373}
   m_Layer: 0
-  m_Name: Animation_Projectile_Kick_00
+  m_Name: Animation_Projectile_Kick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
