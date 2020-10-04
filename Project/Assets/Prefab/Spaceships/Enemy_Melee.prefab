@@ -4927,7 +4927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55220a9f1165e14794a8523b956090d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4947639650534252350, guid: 1b5fec90344ccb44996c66298c4aa882, type: 3}
+  prefab: {fileID: -2861760415804629019, guid: 19ee87868c8843d43ad1f22aa8a29f37, type: 3}
 --- !u!1 &3277909071451554753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9822,7 +9822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55220a9f1165e14794a8523b956090d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4947639650534252350, guid: 1b5fec90344ccb44996c66298c4aa882, type: 3}
+  prefab: {fileID: -2861760415804629019, guid: 19ee87868c8843d43ad1f22aa8a29f37, type: 3}
 --- !u!1 &4981803894849188367
 GameObject:
   m_ObjectHideFlags: 0
@@ -19575,6 +19575,7 @@ GameObject:
   - component: {fileID: 5908833355397561118}
   - component: {fileID: 4320451569721210086}
   - component: {fileID: 6123194782859217819}
+  - component: {fileID: 6942993513134377087}
   m_Layer: 0
   m_Name: Enemy_Melee
   m_TagString: Untagged
@@ -19663,6 +19664,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathAnimPrefab: {fileID: 2465413783210219379, guid: 270c590052c760c429a11e65a95ae6f8, type: 3}
   shipSprite: {fileID: 6587736420097965500}
+--- !u!95 &6942993513134377087
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587736420225936826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7883373650983457915
 GameObject:
   m_ObjectHideFlags: 0
@@ -19745,7 +19765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55220a9f1165e14794a8523b956090d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4947639650534252350, guid: 9e11311d109e4b345a2ac22afaa868d2, type: 3}
+  prefab: {fileID: -2861760415804629019, guid: 19ee87868c8843d43ad1f22aa8a29f37, type: 3}
 --- !u!1001 &2842197575159050096
 PrefabInstance:
   m_ObjectHideFlags: 0
