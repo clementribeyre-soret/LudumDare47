@@ -903,13 +903,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 5805798781630403207, guid: bb3c94b5c09385e478f69dd148d61c37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6496776433713600841, guid: bb3c94b5c09385e478f69dd148d61c37, type: 3}
       propertyPath: m_SortingLayerID
       value: -441000771
       objectReference: {fileID: 0}
     - target: {fileID: 6496776433713600841, guid: bb3c94b5c09385e478f69dd148d61c37, type: 3}
       propertyPath: m_SortingLayer
-      value: -1
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6496776433713600841, guid: bb3c94b5c09385e478f69dd148d61c37, type: 3}
       propertyPath: m_SortingOrder
