@@ -10,6 +10,7 @@ public class BeatEvent : MonoBehaviour
     public UnityEvent onBeat;
     public UnityEvent onBar;
     public UnityEvent onStrongBeat;
+    public UnityEvent onWeakBeat;
 
     public BeatPlayer beatPlayer;
 
@@ -32,6 +33,7 @@ public class BeatEvent : MonoBehaviour
             onBar.Invoke();
         if(beatIndex % 2 == 0)
             onStrongBeat.Invoke();
+        else onWeakBeat.Invoke();
         if(beatIndex % 2 == 0)
             onStrongBeat.Invoke();
         foreach(BeatConfig beat in beats)
