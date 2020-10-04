@@ -19,6 +19,7 @@ public class CameraController : MonoBehaviour
     {
         targetScreen = screen;
         this.transitionDuration = transitionDuration;
+        this.transitionTime = 0;
         currentScreen.onScreenExit?.Invoke();
     }
     
@@ -26,6 +27,7 @@ public class CameraController : MonoBehaviour
     {
         targetScreen = screens[screenName];
         this.transitionDuration = transitionDuration;
+        this.transitionTime = 0;
         currentScreen.onScreenExit?.Invoke();
     }
 
