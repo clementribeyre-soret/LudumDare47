@@ -7,18 +7,17 @@ public class MoveAndStopEnemyMovement : MonoBehaviour
     public float velocity = 3;
     public float distanceBeforeStop = 10;
     private float travelledDistance = 0;
-    private Ship ship;
 
     void Start()
     {
-        ship = GetComponentInParent<Ship>();
+        
     }
 
     void Update()
     {
         if(travelledDistance < distanceBeforeStop)
         {
-            ship.transform.position += ship.transform.up * velocity * Time.deltaTime;
+            transform.position += transform.up * velocity * Time.deltaTime;
             travelledDistance += Time.deltaTime * velocity;
 
         }
