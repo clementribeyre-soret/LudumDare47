@@ -4,6 +4,7 @@ using UnityEngine;
 public class FadeOutSprite : MonoBehaviour
 {
     public float disappearDuration = 1;
+    public float destroyDelay = 2;
     private float disappearTime;
     private SpriteRenderer spriteRenderer;
     private void Start()
@@ -15,7 +16,7 @@ public class FadeOutSprite : MonoBehaviour
     {
         disappearTime += Time.deltaTime;
         spriteRenderer.color = new Color(1, 1, 1, 1 - disappearTime / disappearDuration);
-        if(disappearTime > disappearDuration)
+        if(disappearTime > destroyDelay)
             Destroy(gameObject);
     }
 }
