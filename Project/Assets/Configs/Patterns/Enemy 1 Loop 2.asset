@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9230d3b833f5164094510634ff71672, type: 3}
-  m_Name: Player Loop
+  m_Name: Enemy 1 Loop 2
   m_EditorClassIdentifier: Assembly-CSharp::Loop
   stepCount: 8
-  kick: 0100000000000000
-  crash: 0001000000000000
-  snare: 0000010001000000
-  ride: 0100010001000100
+  kick: 0100000001000000
+  crash: 0000000000000000
+  snare: 0000000000000000
+  ride: 0000000000000000

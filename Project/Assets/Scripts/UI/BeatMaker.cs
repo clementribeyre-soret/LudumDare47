@@ -28,7 +28,7 @@ public class BeatMaker : MonoBehaviour
             ValueToggle toggle = Instantiate(buttonPrefab, gridLayout.transform);
             toggles[i] = toggle;
             toggle.index = i;
-            toggle.ForceChecked(player.loop.loopContent[toggle.index]);
+            toggle.ForceChecked(player.loop.GetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount));
             toggle.valueChanged += OnValueChanged;
         }
         for(int i=0; i<beats.Length; i++)
@@ -39,7 +39,7 @@ public class BeatMaker : MonoBehaviour
 
     private void OnValueChanged(ValueToggle toggle)
     {
-        player.loop.loopContent[toggle.index] = toggle.isChecked;
+        player.loop.SetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount, toggle.isChecked);
     }
 
     void Update()

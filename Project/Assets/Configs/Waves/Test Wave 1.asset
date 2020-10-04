@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test Wave 1
   m_EditorClassIdentifier: 
   toSpawn:
-  - ship: {fileID: 11400000, guid: 1b09642b256f40749866391fec95a048, type: 2}
+  - ship: {fileID: 11400000, guid: 2c7e99b7357eb1e4e87fa44e331a76c7, type: 2}
     position: 0
     delay: 0
     offset: 0

@@ -7,10 +7,15 @@ public class Projectile : MonoBehaviour
     public float speed;
     public float damage;
     public Team team;
+    public float destroyAfter = 5;
+    private float lifeTime;
 
     void Update()
     {
         transform.position += transform.up * speed * Time.deltaTime;
+        lifeTime += Time.deltaTime;
+        if(lifeTime > destroyAfter)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -22,14 +22,14 @@ public class BeatMakerPanel : MonoBehaviour
             buttons[i].SetColor(BeatService.instance.beats[beatConfigIndex].color);
             ValueToggle toggle = buttons[i].GetComponent<ValueToggle>();
             toggle.index = i + beatConfigIndex * buttons.Length;
-            toggle.ForceChecked(player.loop.loopContent[toggle.index]);
+            toggle.ForceChecked(player.loop.GetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount));
             toggle.valueChanged += OnValueChanged;
         }
     }
 
     private void OnValueChanged(ValueToggle toggle)
     {
-        player.loop.loopContent[toggle.index] = toggle.isChecked;
+        player.loop.SetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount, toggle.isChecked);
     }
 
     private void OnBeat(int index)

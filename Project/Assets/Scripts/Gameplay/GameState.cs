@@ -9,10 +9,16 @@ public class GameState : MonoBehaviour
 
     public bool movementAllowed;
     public Ship playerShipPrefab;
+    public int currentLevel = 0;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    public void StartGame()
+    {
+        currentLevel = 0;
     }
 
     public void SpawnPlayer()

@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494143962033751529}
   - component: {fileID: 2494143962033751528}
+  - component: {fileID: 579070849370823972}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -77,9 +78,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPrefab: {fileID: 5515355610994828597, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
-  waves:
-  - {fileID: 11400000, guid: 0dab4c68c78d14848bc17e2d8f2932cd, type: 2}
-  - {fileID: 11400000, guid: c2f7dc48c30a2e64dabbb57ff26506ce, type: 2}
   slots:
   - spawnPos: {fileID: 7179004340448305862}
     slotId: 0
@@ -88,6 +86,24 @@ MonoBehaviour:
   - spawnPos: {fileID: 9011885566526263533}
     slotId: 2
   spacing: 1
+--- !u!114 &579070849370823972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494143962033751530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449d5df46d760004fa0f4e4487ef8b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: 8d88db0bc9e5fc54eaa5e4ce8f7ee3f6, type: 2}
+  - {fileID: 11400000, guid: 8bddbd993da948b4696e44e4024bb596, type: 2}
+  - {fileID: 11400000, guid: c1824828e21b00c40ab93f6f384f7220, type: 2}
+  levelDisplayPrefab: {fileID: 982866066536696617, guid: feb63ac600287e34b836ef52cd1b0c04, type: 3}
+  startDelay: 3
 --- !u!1 &4299997586907099436
 GameObject:
   m_ObjectHideFlags: 0

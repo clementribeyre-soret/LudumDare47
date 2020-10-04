@@ -340,6 +340,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 453965609}
+        m_TargetAssemblyTypeName: GameState, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   exitEvent:
     m_PersistentCalls:
       m_Calls:
@@ -422,6 +434,7 @@ MonoBehaviour:
   playerShipInstance: {fileID: 0}
   movementAllowed: 0
   playerShipPrefab: {fileID: 6220766578043452857, guid: 54e474142206e3b4abef443bf429f41b, type: 3}
+  currentLevel: 0
 --- !u!4 &701074186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1713196292282196949, guid: 33467ff2cfa44504598f50b669c69324, type: 3}
@@ -922,7 +935,7 @@ GameObject:
   - component: {fileID: 1831297377}
   - component: {fileID: 1831297378}
   m_Layer: 0
-  m_Name: Game Screen
+  m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,19 +998,7 @@ MonoBehaviour:
         m_CallState: 2
   exitEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 453965609}
-        m_TargetAssemblyTypeName: GameState, Assembly-CSharp
-        m_MethodName: BlockMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1831297378
 MonoBehaviour:
   m_ObjectHideFlags: 0

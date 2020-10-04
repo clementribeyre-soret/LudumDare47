@@ -12,7 +12,6 @@ public struct SpawnerSlot
 public class EnemySpawner : MonoBehaviour
 {
     public Ship shipPrefab;
-    public EnemyWave[] waves;
     public SpawnerSlot[] slots;
     private List<Ship> spawnElements = new List<Ship>();
     private int aliveSpawnedCount;
@@ -23,10 +22,12 @@ public class EnemySpawner : MonoBehaviour
     private float spawnTime = 0;
     private List<ShipSpawnConfig> toSpawn = new List<ShipSpawnConfig>();
 
+    public System.Action onWaveCleared;
+
     
     void Start()
     {
-        SpawnRandomWave();
+        
     }
 
     void Update()
@@ -50,11 +51,6 @@ public class EnemySpawner : MonoBehaviour
         {
             toSpawn.RemoveAt(i);
         }
-        if(mustSpawnNextWave)
-        {
-            mustSpawnNextWave = false;
-            SpawnRandomWave();
-        }
     }
 
     Transform GetSpawnerSlot(ShipSpawnPosition index)
@@ -69,11 +65,9 @@ public class EnemySpawner : MonoBehaviour
         return null;
     }
 
-    void SpawnRandomWave()
+    public void SpawnWave(EnemyWave wave)
     {
         spawnTime = 0;
-        int selectedWave = Random.Range(0, waves.Length);
-        EnemyWave wave = waves[selectedWave];
         int toSpawnCount = wave.toSpawn.Length;
         for(int i=0; i<wave.toSpawn.Length; i++)
         {
@@ -85,6 +79,8 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnElements.Remove(ship);
         if(spawnElements.Count == 0 && toSpawn.Count == 0)
-            mustSpawnNextWave = true;
+        {
+            onWaveCleared?.Invoke();
+        }
     }
 }

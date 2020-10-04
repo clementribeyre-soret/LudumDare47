@@ -5,5 +5,5 @@ public class ShipConfig : ScriptableObject
 {
     public Transform shipPrefab;
     public Transform movementPatternPrefab;
-    public BeatLoop loop;
+    public BeatLoop[] loops;
 }

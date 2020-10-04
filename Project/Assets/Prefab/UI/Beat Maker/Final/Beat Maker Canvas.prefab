@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 2
-  screen: Game Screen
+  screen: Level 1
 --- !u!1001 &109207184187626831
 PrefabInstance:
   m_ObjectHideFlags: 0
