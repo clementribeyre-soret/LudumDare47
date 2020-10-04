@@ -21,8 +21,8 @@ public class BeatPlayer : MonoBehaviour
 
     void Start()
     {
-        if(resetLoop)
-            loop.loopContent = new bool[loop.stepCount * BeatService.instance.beats.Length];
+        //if(resetLoop)
+        //    loop.loopContent = new bool[loop.stepCount * BeatService.instance.beats.Length];
 
         BeatService.instance.onBeat += OnBeat;
     }

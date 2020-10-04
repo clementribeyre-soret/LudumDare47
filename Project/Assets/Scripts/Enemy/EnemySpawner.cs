@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public Ship shipPrefab;
     public EnemyWave[] waves;
-    private List<GameObject> spawnElements = new List<GameObject>();
+    private List<Ship> spawnElements = new List<Ship>();
     private int aliveSpawnedCount;
     public float spacing = 1;
 
@@ -22,16 +23,16 @@ public class EnemySpawner : MonoBehaviour
         int toSpawnCount = wave.toSpawn.Length;
         for(int i=0; i<wave.toSpawn.Length; i++)
         {
-            GameObject spawned = Instantiate(wave.toSpawn[i], transform.position + transform.right * (i - toSpawnCount / 2), wave.toSpawn[i].rotation).gameObject;
+            Ship spawned = Instantiate(shipPrefab, transform.position + transform.right * (i - toSpawnCount / 2), transform.rotation);
+            spawned.config = wave.toSpawn[i];
             spawnElements.Add(spawned);
             spawned.GetComponent<Health>().onDeathDelegate += DecrSpawnedCount;
-            Debug.Log(spawned);
         }
     }
 
     void DecrSpawnedCount(Health health)
     {
-        spawnElements.Remove(health.gameObject);
+        spawnElements.Remove(health.GetComponent<Ship>());
         if(spawnElements.Count == 0)
             SpawnRandomWave();
     }

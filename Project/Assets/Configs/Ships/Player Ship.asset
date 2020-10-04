@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1106676eac8a42b62e0bc50f03a3e, type: 3}
+  m_Name: Player Ship
+  m_EditorClassIdentifier: 
+  shipPrefab: {fileID: 2151404195983006945, guid: b8686266bec29104c99de534bc778a0a, type: 3}
+  movementPatternPrefab: {fileID: 4536532368273638156, guid: 2ee3d5fbad5bd094caab144004396d2e, type: 3}
+  loop: {fileID: 11400000, guid: e5e1b18d41b096c48b03261ec178e49a, type: 2}

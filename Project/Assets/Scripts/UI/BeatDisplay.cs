@@ -21,7 +21,7 @@ public class BeatDisplay : MonoBehaviour
             int beatConfig = 0;
             for(int j=0; j<BeatService.instance.beats.Length; j++)
             {
-                if(player.loop.loopContent[i * stepCount + j])
+                if(player.loop.loopContent[j * stepCount + i])
                 {
                     beatConfig++;
                 }

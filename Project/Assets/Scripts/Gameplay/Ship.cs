@@ -5,15 +5,18 @@ using UnityEngine;
 public class Ship : MonoBehaviour
 {
 
-    public Transform shipContent;
+    public BeatPlayer player;
+    public ShipConfig config;
     
     void Start()
     {
-        Instantiate(shipContent, transform);
+        Instantiate(config.shipPrefab, transform);
+        Instantiate(config.movementPatternPrefab, transform);
+        player.loop = config.loop;
     }
 
     void Update()
     {
-        
+
     }
 }
