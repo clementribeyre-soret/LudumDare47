@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1152345264233425099}
   - component: {fileID: 6150303524025407335}
   - component: {fileID: 4668505142621501446}
-  - component: {fileID: 4184061972160034350}
   - component: {fileID: -4701970042135574469}
   - component: {fileID: -5153687457100490173}
   - component: {fileID: 2564329509844151008}
+  - component: {fileID: 7491225951040962278}
   m_Layer: 0
   m_Name: Enemy Shooter
   m_TagString: Untagged
@@ -110,19 +110,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   team: 1
---- !u!114 &4184061972160034350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152345264233425100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae3c2a750cc39174fb829c8ac64ead82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 1
 --- !u!61 &-4701970042135574469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -183,6 +170,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4947639650534252350, guid: 9e11311d109e4b345a2ac22afaa868d2, type: 3}
+--- !u!114 &7491225951040962278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152345264233425100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3d644d77df0c640a8fd13fcb2f904d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 3
+  distanceBeforeStop: 7
 --- !u!1001 &7780831359281155199
 PrefabInstance:
   m_ObjectHideFlags: 0

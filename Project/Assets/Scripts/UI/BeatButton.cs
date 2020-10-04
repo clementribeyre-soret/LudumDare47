@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class BeatButton : MonoBehaviour
 {
     public Image beatImage;
+    public Image checkedImage;
     public float fadeOutTime;
     public float fadeOutDuration = 0.5f;
 
     void Start()
     {
         
+    }
+
+    public void SetColor(Color color)
+    {
+        checkedImage.color = color;
     }
 
     void Update()

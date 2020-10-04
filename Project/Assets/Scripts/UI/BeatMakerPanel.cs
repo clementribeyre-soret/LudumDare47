@@ -20,6 +20,7 @@ public class BeatMakerPanel : MonoBehaviour
         BeatService.instance.onBeat += OnBeat;
         for(int i=0; i<buttons.Length; i++)
         {
+            buttons[i].SetColor(BeatService.instance.beats[beatConfigIndex].color);
             ValueToggle toggle = buttons[i].GetComponent<ValueToggle>();
             toggle.index = i + beatConfigIndex * buttons.Length;
             toggle.ForceChecked(player.loop.loopContent[toggle.index]);

@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Kick
   sound: {fileID: 8300000, guid: d752064f472d231468d3b9c9c57b2da8, type: 3}
   icon: {fileID: 0}
+  color: {r: 1, g: 0.44384763, b: 0.0141509175, a: 1}
