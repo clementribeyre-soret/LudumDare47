@@ -8,6 +8,7 @@ public class EnemySpawner : MonoBehaviour
     private List<GameObject> spawnElements = new List<GameObject>();
     private int aliveSpawnedCount;
     public float spacing = 1;
+    public Transform[] spawnPoints;
 
     
     void Start()
@@ -20,9 +21,14 @@ public class EnemySpawner : MonoBehaviour
         int selectedWave = Random.Range(0, waves.Length);
         EnemyWave wave = waves[selectedWave];
         int toSpawnCount = wave.toSpawn.Length;
+        List<Transform> availableSpawnPoints = new List<Transform>();
+        foreach(Transform spawnPoint in spawnPoints)
+            availableSpawnPoints.Add(spawnPoint);
         for(int i=0; i<wave.toSpawn.Length; i++)
         {
-            GameObject spawned = Instantiate(wave.toSpawn[i], transform.position + transform.right * (i - toSpawnCount / 2), wave.toSpawn[i].rotation).gameObject;
+            int spawnIndex = Random.Range(0, availableSpawnPoints.Count);
+            GameObject spawned = Instantiate(wave.toSpawn[i], availableSpawnPoints[spawnIndex].position, availableSpawnPoints[spawnIndex].rotation * wave.toSpawn[i].rotation).gameObject;
+            availableSpawnPoints.RemoveAt(spawnIndex);
             spawnElements.Add(spawned);
             spawned.GetComponent<Health>().onDeathDelegate += DecrSpawnedCount;
             Debug.Log(spawned);
