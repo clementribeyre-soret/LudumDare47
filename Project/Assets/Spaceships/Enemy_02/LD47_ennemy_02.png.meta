@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1554898057414478187
-    second: LD47_ennemy_02_body
+    second: LD47_enemy_02_body
   - first:
       213: 2269163482071418700
-    second: LD47_ennemy_02_cannon
+    second: LD47_enemy_02_cannon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LD47_ennemy_02_body
+      name: LD47_enemy_02_body
       rect:
         serializedVersion: 2
         x: 275
@@ -103,7 +103,7 @@ TextureImporter:
         width: 474
         height: 929
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -116,7 +116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LD47_ennemy_02_cannon
+      name: LD47_enemy_02_cannon
       rect:
         serializedVersion: 2
         x: 830
@@ -124,7 +124,7 @@ TextureImporter:
         width: 32
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
