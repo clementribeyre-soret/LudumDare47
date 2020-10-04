@@ -13,7 +13,7 @@ public class BeatDisplay : MonoBehaviour
     {
         //if(player == null)
         //    player = BeatPlayer.registered[beatPlayerName];
-        cursor.player = player;
+        /*cursor.player = player;
         int stepCount = player.loop.stepCount;
         for(int i=0; i<stepCount; i++)
         {
@@ -27,7 +27,7 @@ public class BeatDisplay : MonoBehaviour
                 }
             }
             stepDisplay.beatConfig = beatConfig;
-        }
+        }*/
     }
 
     void Update()
