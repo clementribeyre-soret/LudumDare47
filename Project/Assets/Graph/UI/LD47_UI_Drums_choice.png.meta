@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: 2612742499089604508
     second: LD47_UI_Drums_choice_4
+  - first:
+      213: -25887138233547708
+    second: LD47_UI_Drums_choice_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -216,6 +219,27 @@ TextureImporter:
       bones: []
       spriteID: c9f5dc3c573524420800000000000000
       internalID: 2612742499089604508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LD47_UI_Drums_choice_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1363
+        width: 146
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4448651f8c704aff0800000000000000
+      internalID: -25887138233547708
       vertices: []
       indices: 
       edges: []

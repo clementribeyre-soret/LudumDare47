@@ -12,8 +12,6 @@ public class BeatEvent : MonoBehaviour
 
     private void Start()
     {
-        if(beatPlayer == null)
-            beatPlayer = GetComponentInParent<BeatPlayer>();
         beatPlayer.onBeat += OnBeat;
     }
 
