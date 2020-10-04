@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    public float speed;
+
+    public Transform shipContent;
     
     void Start()
     {
-        
+        Instantiate(shipContent, transform);
     }
 
     void Update()
     {
-        transform.position += speed * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * Time.deltaTime;
+        
     }
 }
