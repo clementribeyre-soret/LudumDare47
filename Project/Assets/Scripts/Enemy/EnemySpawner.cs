@@ -26,13 +26,13 @@ public class EnemySpawner : MonoBehaviour
             Ship spawned = Instantiate(shipPrefab, transform.position + transform.right * (i - toSpawnCount / 2), transform.rotation);
             spawned.config = wave.toSpawn[i];
             spawnElements.Add(spawned);
-            spawned.GetComponent<Health>().onDeathDelegate += DecrSpawnedCount;
+            spawned.onDeath += DecrSpawnedCount;
         }
     }
 
-    void DecrSpawnedCount(Health health)
+    void DecrSpawnedCount(Ship ship)
     {
-        spawnElements.Remove(health.GetComponent<Ship>());
+        spawnElements.Remove(ship);
         if(spawnElements.Count == 0)
             SpawnRandomWave();
     }

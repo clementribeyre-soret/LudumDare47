@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 740990200}
   - component: {fileID: 740990195}
   - component: {fileID: 740990196}
-  - component: {fileID: 740990202}
   - component: {fileID: 5515355610994828597}
+  - component: {fileID: 2544919370448138370}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -113,8 +113,20 @@ MonoBehaviour:
   maxHealth: 3
   onDeath:
     m_PersistentCalls:
-      m_Calls: []
-  team: 0
+      m_Calls:
+      - m_Target: {fileID: 740990195}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: Kill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  team: 1
 --- !u!114 &740990196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,23 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sourcePrefab: {fileID: 6589645273293194761, guid: e9e4c2bbbf8072945b4f778e172e4654, type: 3}
   player: {fileID: 6993832418089563849}
---- !u!114 &740990202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4298864060733344098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dba21d121f2a41e44965fe8cdb607b04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-  team: 0
 --- !u!114 &5515355610994828597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +155,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6993832418089563849}
   config: {fileID: 0}
+--- !u!114 &2544919370448138370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4298864060733344098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c80fcefe4567c5469b0eb61af71e3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minY: -6

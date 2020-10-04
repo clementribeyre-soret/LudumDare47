@@ -778,6 +778,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740990195, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
+      propertyPath: team
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740990202, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
+      propertyPath: team
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4298864060733344098, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -830,7 +838,8 @@ PrefabInstance:
       propertyPath: config
       value: 
       objectReference: {fileID: 11400000, guid: d6d39280da5621c42bc061aacae2dc86, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2544919370448138370, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b874203b3e865ee46b310d2074db4e4c, type: 3}
 --- !u!1001 &5805798781884909181
 PrefabInstance:

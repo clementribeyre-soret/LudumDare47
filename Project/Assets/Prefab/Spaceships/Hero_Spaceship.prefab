@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 4cf68294b27c9924883b426e48e12209, type: 2}
-  onBeat:
+  onSelectedBeat:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4137837701881431053}
@@ -162,6 +162,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onBeat:
+    m_PersistentCalls:
+      m_Calls: []
+  onBar:
+    m_PersistentCalls:
+      m_Calls: []
+  onStrongBeat:
+    m_PersistentCalls:
+      m_Calls: []
   beatPlayer: {fileID: 0}
 --- !u!114 &4137837701881431053
 MonoBehaviour:
@@ -187,6 +196,8 @@ GameObject:
   - component: {fileID: 2151404195983006945}
   - component: {fileID: 6222606332041283657}
   - component: {fileID: 5368468388028071484}
+  - component: {fileID: 5333517192295521564}
+  - component: {fileID: 2677237796162669931}
   m_Layer: 0
   m_Name: Hero_Spaceship
   m_TagString: Untagged
@@ -258,6 +269,53 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &5333517192295521564
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151404195983006944}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &2677237796162669931
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151404195983006944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0071406513, y: 0.042271376}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3867739, y: 0.738441}
+  m_EdgeRadius: 0
 --- !u!1 &2900222886902408655
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +409,7 @@ GameObject:
   - component: {fileID: 4454261784415632960}
   - component: {fileID: 8403351834639934383}
   - component: {fileID: 4180501385898734626}
+  - component: {fileID: 272092461697490764}
   m_Layer: 0
   m_Name: Cannon Forward
   m_TagString: Untagged
@@ -385,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 42c05749c98f07f428a459c571edff74, type: 2}
-  onBeat:
+  onSelectedBeat:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4180501385898734626}
@@ -400,6 +459,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5368468388028071484}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Kick
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBeat:
+    m_PersistentCalls:
+      m_Calls: []
+  onBar:
+    m_PersistentCalls:
+      m_Calls: []
+  onStrongBeat:
+    m_PersistentCalls:
+      m_Calls: []
   beatPlayer: {fileID: 0}
 --- !u!114 &4180501385898734626
 MonoBehaviour:
@@ -414,6 +494,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4947639650534252350, guid: 9e11311d109e4b345a2ac22afaa868d2, type: 3}
+--- !u!95 &272092461697490764
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4251807023386106357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4686851313140440773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 826cc44a3534b72438c5627106e468a0, type: 2}
-  onBeat:
+  onSelectedBeat:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6154517313596738844}
@@ -1252,6 +1351,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onBeat:
+    m_PersistentCalls:
+      m_Calls: []
+  onBar:
+    m_PersistentCalls:
+      m_Calls: []
+  onStrongBeat:
+    m_PersistentCalls:
+      m_Calls: []
   beatPlayer: {fileID: 0}
 --- !u!114 &6154517313596738844
 MonoBehaviour:

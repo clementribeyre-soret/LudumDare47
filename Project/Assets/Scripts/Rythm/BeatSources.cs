@@ -23,7 +23,7 @@ public class BeatSources : MonoBehaviour
         player.onBeat -= OnBeat;
 
     }
-    void OnBeat(List<BeatConfig> configs)
+    void OnBeat(int beatIndex, List<BeatConfig> configs)
     {
         foreach(BeatConfig config in configs)
         {
