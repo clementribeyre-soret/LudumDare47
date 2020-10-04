@@ -10,11 +10,10 @@ public class BeatMakerPanel : MonoBehaviour
     public Text knobText;
     private BeatPlayer player;
     public BeatButton[] buttons;
-    public string beatPlayerName;
     void Start()
     {
         if(player == null)
-            player = BeatPlayer.registered[beatPlayerName];
+            player = GameState.instance.playerShipInstance.GetComponent<BeatPlayer>();
         titleText.text = BeatService.instance.beats[beatConfigIndex].name;
         knobText.text = "5";
         BeatService.instance.onBeat += OnBeat;

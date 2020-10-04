@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        ship.transform.position += speed * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * Time.deltaTime;
+        if(GameState.instance.movementAllowed)
+            ship.transform.position += speed * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * Time.deltaTime;
     }
 }
