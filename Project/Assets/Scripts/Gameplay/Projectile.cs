@@ -15,7 +15,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Health health = other.GetComponentInParent<Health>();
+        Health health = other.GetComponent<Health>();
+        if(health == null)
+            health = other.GetComponentInParent<Health>();
         if(health != null && team != health.team)
         {
             health.Damage(damage);

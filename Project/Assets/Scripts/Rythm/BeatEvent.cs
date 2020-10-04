@@ -18,6 +18,8 @@ public class BeatEvent : MonoBehaviour
     {
         if(beatPlayer == null)
             beatPlayer = GetComponentInParent<BeatPlayer>();
+        if(beatPlayer == null)
+            beatPlayer = GameState.instance.playerShipInstance.GetComponent<BeatPlayer>();
         beatPlayer.onBeat += OnBeat;
     }
 

@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
     public void Damage(float damage)
     {
         currentHealth -= damage;
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
         {
             onDeathDelegate?.Invoke(this);
             onDeath.Invoke();
