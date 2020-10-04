@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cf1106676eac8a42b62e0bc50f03a3e, type: 3}
-  m_Name: Basic Enemy Ship
+  m_Name: Enemy 1
   m_EditorClassIdentifier: 
   shipPrefab: {fileID: 6587736420225936827, guid: e9b77b4b34593b741864aaa0941fbe9e, type: 3}
   movementPatternPrefab: {fileID: 1442756322900216131, guid: 45600241af31a8b4e97f2640580f1a9e, type: 3}
