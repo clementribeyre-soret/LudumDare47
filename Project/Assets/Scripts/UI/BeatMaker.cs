@@ -12,13 +12,12 @@ public class BeatMaker : MonoBehaviour
     public GridLayoutGroup gridLayout;
     private ValueToggle[] toggles;
     public BeatPlayer player;
-    public string beatPlayerName;
     public BeatCursor cursor;
 
     void Start()
     {
         if(player == null)
-            player = BeatPlayer.registered[beatPlayerName];
+            player = GameState.instance.playerShipInstance.GetComponent<BeatPlayer>();
         cursor.player = player;
         int stepCount = player.loop.stepCount;
         BeatConfig[] beats = BeatService.instance.beats;
