@@ -9,16 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4298864060733344103}
-  - component: {fileID: 4298864060733344101}
+  - component: {fileID: 4298864060733344097}
   - component: {fileID: 6993832418089563849}
-  - component: {fileID: 4733322691084487952}
   - component: {fileID: 740990201}
   - component: {fileID: 740990200}
   - component: {fileID: 740990195}
   - component: {fileID: 740990196}
-  - component: {fileID: 740990197}
   - component: {fileID: 740990202}
-  - component: {fileID: 4969173211152047068}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -40,35 +37,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4298864060733344101
+--- !u!114 &4298864060733344097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4298864060733344098}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88a2d0b9e5740234fa23dd3727bea65a, type: 3}
+  m_Script: {fileID: 11500000, guid: feaa0e63a8e3bfa46bd347b9cae21b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: 34ba191b4c6f018409628b0ca97cfd95, type: 2}
-  onBeat:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 740990197}
-        m_TargetAssemblyTypeName: ProjectileSpawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  beatPlayer: {fileID: 6993832418089563849}
+  speed: 5
 --- !u!114 &6993832418089563849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,19 +64,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loop: {fileID: 11400000, guid: e5e1b18d41b096c48b03261ec178e49a, type: 2}
   resetLoop: 1
---- !u!114 &4733322691084487952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4298864060733344098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feaa0e63a8e3bfa46bd347b9cae21b96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!50 &740990201
 Rigidbody2D:
   serializedVersion: 4
@@ -174,19 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sourcePrefab: {fileID: 6589645273293194761, guid: e9e4c2bbbf8072945b4f778e172e4654, type: 3}
   player: {fileID: 6993832418089563849}
---- !u!114 &740990197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4298864060733344098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55220a9f1165e14794a8523b956090d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
 --- !u!114 &740990202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,16 +159,3 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   team: 0
---- !u!114 &4969173211152047068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4298864060733344098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 080cbc9f748cf6c4098b2972bbe399ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipRenderPrefab: {fileID: 2151404195983006945, guid: b8686266bec29104c99de534bc778a0a, type: 3}

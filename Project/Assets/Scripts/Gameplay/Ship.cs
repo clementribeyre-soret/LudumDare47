@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    public Transform shipRenderPrefab;
 
+    public Transform shipContent;
+    
     void Start()
     {
-        Instantiate(shipRenderPrefab, transform);
+        Instantiate(shipContent, transform);
     }
 
     void Update()
