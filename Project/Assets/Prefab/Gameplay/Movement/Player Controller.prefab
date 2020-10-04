@@ -44,3 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  allowedArea:
+    serializedVersion: 2
+    x: -8
+    y: -2.5
+    width: 16
+    height: 8
