@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e31ed8388580847b4ac8422dc2ae79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disappearDuration: 1
+  disappearDuration: 0.1
+  destroyDelay: 2
 --- !u!1001 &6314249664388418429
 PrefabInstance:
   m_ObjectHideFlags: 0
