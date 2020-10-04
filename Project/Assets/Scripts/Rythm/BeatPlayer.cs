@@ -10,7 +10,7 @@ public class BeatPlayer : MonoBehaviour
 
     public float loopRatio { get {float result = BeatService.instance.time / (loop.stepCount * BeatService.instance.beatDuration); return result - Mathf.Floor(result);}}
 
-    public System.Action<List<BeatConfig>> onBeat;
+    public System.Action<int, List<BeatConfig>> onBeat;
 
     public static Dictionary<string, BeatPlayer> registered = new Dictionary<string, BeatPlayer>();
 
@@ -42,6 +42,6 @@ public class BeatPlayer : MonoBehaviour
                 configs.Add(BeatService.instance.beats[i]);
             }
         }
-        onBeat?.Invoke(configs);
+        onBeat?.Invoke(beatIndex % loop.stepCount, configs);
     }
 }

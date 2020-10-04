@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-
+    public System.Action<Ship> onDeath;
     public BeatPlayer player;
     public ShipConfig config;
     
@@ -13,6 +13,11 @@ public class Ship : MonoBehaviour
         Instantiate(config.shipPrefab, transform);
         Instantiate(config.movementPatternPrefab, transform);
         player.loop = config.loop;
+    }
+
+    private void OnDestroy()
+    {
+        onDeath?.Invoke(this);
     }
 
     void Update()

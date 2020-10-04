@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Test Wave 1
   m_EditorClassIdentifier: 
   toSpawn:
-  - {fileID: 11400000, guid: 1b09642b256f40749866391fec95a048, type: 2}
-  - {fileID: 11400000, guid: 1b09642b256f40749866391fec95a048, type: 2}
-  - {fileID: 11400000, guid: 1b09642b256f40749866391fec95a048, type: 2}
+  - {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+  - {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+  - {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}

@@ -6,7 +6,10 @@ using UnityEngine.Events;
 public class BeatEvent : MonoBehaviour
 {
     public BeatConfig config;
+    public UnityEvent onSelectedBeat;
     public UnityEvent onBeat;
+    public UnityEvent onBar;
+    public UnityEvent onStrongBeat;
 
     public BeatPlayer beatPlayer;
 
@@ -22,13 +25,20 @@ public class BeatEvent : MonoBehaviour
         beatPlayer.onBeat -= OnBeat;
     }
     
-    private void OnBeat(List<BeatConfig> beats)
+    private void OnBeat(int beatIndex, List<BeatConfig> beats)
     {
+        onBeat.Invoke();
+        if(beatIndex == 0)
+            onBar.Invoke();
+        if(beatIndex % 2 == 0)
+            onStrongBeat.Invoke();
+        if(beatIndex % 2 == 0)
+            onStrongBeat.Invoke();
         foreach(BeatConfig beat in beats)
         {
             if(beat == config)
             {
-                onBeat.Invoke();
+                onSelectedBeat.Invoke();
             }
         }
     }
