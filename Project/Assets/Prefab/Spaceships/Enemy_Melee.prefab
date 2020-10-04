@@ -19574,6 +19574,7 @@ GameObject:
   - component: {fileID: 6587736420225936827}
   - component: {fileID: 5908833355397561118}
   - component: {fileID: 4320451569721210086}
+  - component: {fileID: 6123194782859217819}
   m_Layer: 0
   m_Name: Enemy_Melee
   m_TagString: Untagged
@@ -19648,6 +19649,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.91508806, y: 1.875195}
   m_EdgeRadius: 0
+--- !u!114 &6123194782859217819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587736420225936826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672e280d3e9bc204bab65e5c9f4883de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnimPrefab: {fileID: 2465413783210219379, guid: 270c590052c760c429a11e65a95ae6f8, type: 3}
+  shipSprite: {fileID: 6587736420097965500}
 --- !u!1 &7883373650983457915
 GameObject:
   m_ObjectHideFlags: 0

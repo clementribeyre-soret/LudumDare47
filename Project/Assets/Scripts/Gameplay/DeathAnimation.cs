@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DeathAnimation : MonoBehaviour
 {
-    public Transform deathAnimPrefab;
+    public SpriteRenderer deathAnimPrefab;
+    public SpriteRenderer shipSprite;
+
     void Start()
     {
         GetComponentInParent<Health>().onDeathDelegate += OnDeath;        
@@ -13,6 +15,8 @@ public class DeathAnimation : MonoBehaviour
 
     public void OnDeath(Health health)
     {
-
+        SpriteRenderer spawned = Instantiate(deathAnimPrefab, transform.position, transform.rotation);
+        spawned.sprite = shipSprite.sprite;
+        spawned.transform.localScale = shipSprite.transform.lossyScale;
     }
 }
