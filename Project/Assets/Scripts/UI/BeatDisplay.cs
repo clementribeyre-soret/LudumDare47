@@ -11,8 +11,8 @@ public class BeatDisplay : MonoBehaviour
 
     void Start()
     {
-        if(player == null)
-            player = BeatPlayer.registered[beatPlayerName];
+        //if(player == null)
+        //    player = BeatPlayer.registered[beatPlayerName];
         cursor.player = player;
         int stepCount = player.loop.stepCount;
         for(int i=0; i<stepCount; i++)
