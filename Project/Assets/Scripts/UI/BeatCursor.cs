@@ -19,7 +19,7 @@ public class BeatCursor : MonoBehaviour
         Vector2 min = target.rect.min;
         Vector2 max = target.rect.max;
 
-        ratio = player.loopRatio;
+        //ratio = player.loopRatio;
         
         rectTransform.anchoredPosition = new Vector2(target.position.x + min.x + (max.x - min.x) * ratio, target.position.y);
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, target.rect.size.y);
