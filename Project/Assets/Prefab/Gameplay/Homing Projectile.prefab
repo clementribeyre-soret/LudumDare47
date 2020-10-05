@@ -499,7 +499,7 @@ MonoBehaviour:
   speed: 2
   damage: 1
   team: 0
-  destroyAfter: 5
+  destroyAfter: 0
   explosionFXPrefab: {fileID: 1096362277151786402, guid: cc56b875a7328f8458100d7987b1a054, type: 3}
 --- !u!61 &3854233275860970615
 BoxCollider2D:
@@ -581,6 +581,7 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls: []
+  deathFXPrefab: {fileID: 0}
 --- !u!114 &-4550654546203579603
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour
     {
         transform.position += transform.up * speed * Time.deltaTime;
         lifeTime += Time.deltaTime;
-        if(lifeTime > destroyAfter)
+        if(destroyAfter > 0 && lifeTime > destroyAfter)
             Destroy(gameObject);
     }
 
