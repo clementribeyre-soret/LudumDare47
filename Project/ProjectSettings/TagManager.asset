@@ -41,6 +41,9 @@ TagManager:
   - name: Background
     uniqueID: 3853966525
     locked: 0
+  - name: Projectiles
+    uniqueID: 3126442235
+    locked: 0
   - name: Enemy_Melee
     uniqueID: 3423337135
     locked: 0
