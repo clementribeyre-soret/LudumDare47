@@ -24,4 +24,4 @@ MonoBehaviour:
   - ship: {fileID: 11400000, guid: 1b09642b256f40749866391fec95a048, type: 2}
     position: 2
     delay: 2
-    offset: 3
+    offset: -3
