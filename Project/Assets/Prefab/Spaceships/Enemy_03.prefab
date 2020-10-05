@@ -230,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39222497643859091}
   - component: {fileID: 39222497643859084}
+  - component: {fileID: 8980637449153753773}
   m_Layer: 0
   m_Name: Spaceship_body
   m_TagString: Untagged
@@ -302,6 +303,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8980637449153753773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39222497643859090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &136706361175780266
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5643345844063666107}
   - component: {fileID: 1203566738265645653}
+  - component: {fileID: 603788105896901281}
   m_Layer: 0
   m_Name: Spaceship_cannon
   m_TagString: Untagged
@@ -384,6 +400,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603788105896901281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136706361175780266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &249777215422264554
 GameObject:
   m_ObjectHideFlags: 0

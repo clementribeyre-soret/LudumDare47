@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4268232917925560380}
   - component: {fileID: 4215779315042695394}
+  - component: {fileID: 302634370077629138}
   m_Layer: 0
   m_Name: Spaceship_cannon_front_right
   m_TagString: Untagged
@@ -82,6 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &302634370077629138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64783763091129170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &531904483519191693
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +107,7 @@ GameObject:
   - component: {fileID: 2548700826157922543}
   - component: {fileID: 6893372554634811802}
   - component: {fileID: 147377951500133273}
+  - component: {fileID: 4427242108416920418}
   m_Layer: 0
   m_Name: Animation_Spaceship_Electricity_00
   m_TagString: Untagged
@@ -184,6 +199,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4427242108416920418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531904483519191693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1200803293557762590
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7172448745732633933}
   - component: {fileID: 5412618464736598391}
+  - component: {fileID: 9164561509191339259}
   m_Layer: 0
   m_Name: Spaceship_cannon_front_left
   m_TagString: Untagged
@@ -266,6 +295,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9164561509191339259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200803293557762590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1480541018032056092
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1430970175732236870}
   - component: {fileID: 5013302878621690312}
+  - component: {fileID: 8090616149585253674}
   m_Layer: 0
   m_Name: Spaceship_speaker_bottom_right
   m_TagString: Untagged
@@ -622,6 +665,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8090616149585253674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900222886902408655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3007690430600516193
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2319241136467681278}
   - component: {fileID: 1035870896261376296}
+  - component: {fileID: 4071303810386714403}
   m_Layer: 0
   m_Name: Spaceship_body
   m_TagString: Untagged
@@ -1038,6 +1095,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4071303810386714403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4686851313140440773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &4731610676728519104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2416404875985287084}
   - component: {fileID: 851900091474035069}
+  - component: {fileID: 8273801889071682516}
   m_Layer: 0
   m_Name: Spaceship_speaker_top_right
   m_TagString: Untagged
@@ -1120,6 +1191,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8273801889071682516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731610676728519104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5141630441536422005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4405889148961392422}
   - component: {fileID: 8769256572756296079}
+  - component: {fileID: 8146131406094031336}
   m_Layer: 0
   m_Name: Spaceship_speaker_bottom_left
   m_TagString: Untagged
@@ -1202,6 +1287,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8146131406094031336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141630441536422005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5771356064872261699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5191688144972525449}
   - component: {fileID: 2163867046739978734}
+  - component: {fileID: 4659387684097585444}
   m_Layer: 0
   m_Name: Spaceship_cannon_right
   m_TagString: Untagged
@@ -1284,6 +1383,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4659387684097585444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771356064872261699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5995022946146969410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5222511993067273394}
   - component: {fileID: 7977578132028665869}
+  - component: {fileID: 684006967099261438}
   m_Layer: 0
   m_Name: Spaceship_cannon_front
   m_TagString: Untagged
@@ -1468,6 +1581,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &684006967099261438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6407623491330099601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &6675936967051842704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4254207491795147288}
   - component: {fileID: 788899711656634082}
+  - component: {fileID: 3054761446797067898}
   m_Layer: 0
   m_Name: Spaceship_cannon_left
   m_TagString: Untagged
@@ -1652,6 +1779,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3054761446797067898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893607951291481283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &7243549229738723506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,6 +2002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3765695938118970558}
   - component: {fileID: 3345575952448732407}
+  - component: {fileID: 727039604052670340}
   m_Layer: 0
   m_Name: Spaceship_speaker_top_left
   m_TagString: Untagged
@@ -1934,6 +2075,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &727039604052670340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7681733063657380024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c433ee8f258f45988f1275a9899ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &8046205269181293027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2335,10 @@ PrefabInstance:
     - target: {fileID: 989595333227743122, guid: af27280b49ca5b14d9513fa57d5fad58, type: 3}
       propertyPath: m_Name
       value: Animation_SpaceShip_Reactor_00
+      objectReference: {fileID: 0}
+    - target: {fileID: 989595333227743122, guid: af27280b49ca5b14d9513fa57d5fad58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1769663694026439321, guid: af27280b49ca5b14d9513fa57d5fad58, type: 3}
       propertyPath: m_LocalPosition.x
