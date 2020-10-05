@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
 
     public UnityEvent onDamage;
     public System.Action<Health> onDamageDelegate;
+    public GameObject deathFXPrefab;
     
     private void Start()
     {
@@ -34,6 +35,10 @@ public class Health : MonoBehaviour
         {
             onDeathDelegate?.Invoke(this);
             onDeath.Invoke();
+            if(deathFXPrefab != null)
+            {
+                Instantiate(deathFXPrefab, transform.position, transform.rotation);
+            }
         }
     }
 

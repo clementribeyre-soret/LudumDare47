@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf1106676eac8a42b62e0bc50f03a3e, type: 3}
   m_Name: Enemy 1
   m_EditorClassIdentifier: 
+  health: 6
   shipPrefab: {fileID: 6587736420225936827, guid: e9b77b4b34593b741864aaa0941fbe9e, type: 3}
   movementPatternPrefab: {fileID: 1442756322900216131, guid: d7871a95a625f26478cbc4994054e98a, type: 3}
   loops:
