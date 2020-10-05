@@ -49,4 +49,9 @@ public class BeatService : MonoBehaviour
     {
         musicPlayer.Play(music);
     }
+
+    public void PlayMusicImmediately(AudioClip music)
+    {
+        musicPlayer.PlayImmediately(music);
+    }
 }
