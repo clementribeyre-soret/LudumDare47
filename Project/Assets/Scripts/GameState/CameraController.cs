@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class CameraController : MonoBehaviour
 {
     public static CameraController instance;
+    public Transform cameraPosTransform;
     private void Awake() { instance = this;}
     public Screen currentScreen;
     public Screen targetScreen;
@@ -40,7 +41,7 @@ private bool started = false;
     {
         if(!started)
         {
-            mainCamera.transform.position = currentScreen.transform.position;
+            cameraPosTransform.position = currentScreen.transform.position;
             mainCamera.orthographicSize = currentScreen.cameraSize;
             currentScreen.onScreenEnter?.Invoke();
             started = true;
@@ -61,7 +62,7 @@ private bool started = false;
                 startPos = currentScreen.cameraPosition.position;
                 startSize = currentScreen.cameraSize;
             }
-            mainCamera.transform.position = Vector3.Lerp(startPos, targetScreen.transform.position, transitionTime / transitionDuration);
+            cameraPosTransform.position = Vector3.Lerp(startPos, targetScreen.transform.position, transitionTime / transitionDuration);
             mainCamera.orthographicSize = startSize + (targetScreen.cameraSize - startSize) * (transitionTime / transitionDuration);
         }
     }
