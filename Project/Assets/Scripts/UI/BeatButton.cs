@@ -27,7 +27,8 @@ public class BeatButton : MonoBehaviour
 
     void Update()
     {
-        disabledSprite.SetActive(isDisabled);
+        if(disabledSprite != null)
+            disabledSprite.SetActive(isDisabled);
         if(fadeOutTime > 0)
         {
             fadeOutTime -= Time.deltaTime;
