@@ -26,7 +26,6 @@ public class ShockwaveWeapon : MonoBehaviour
                 Collider2D[] overlapColliders = Physics2D.OverlapCircleAll(transform.position, range);
                 foreach(Collider2D c in overlapColliders)
                 {
-                    Debug.Log("Health Found");
                     Health targetHealth = c.GetComponent<Health>();
                     if(targetHealth != null && health.team != targetHealth.team)
                     {
@@ -39,6 +38,7 @@ public class ShockwaveWeapon : MonoBehaviour
 
     public void Shoot()
     {
-        shootDelay = delay;
+        if(GameState.instance.canLaunchProjectiles)
+            shootDelay = delay;
     }
 }

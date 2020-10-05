@@ -18,7 +18,10 @@ public class InstantiateOnScreen : MonoBehaviour
     public void OnScreenEnter()
     {
         foreach(Transform prefab in toInstantiate)
+        {
+            Debug.Log("Instantiate " + prefab);
             instantiated.Add(Instantiate(prefab, parent).gameObject);
+        }
     }
 
     public void OnScreenExit()

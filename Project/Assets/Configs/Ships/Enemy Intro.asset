@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1106676eac8a42b62e0bc50f03a3e, type: 3}
+  m_Name: Enemy Intro
+  m_EditorClassIdentifier: 
+  health: 6
+  shipPrefab: {fileID: 6587736420225936827, guid: e9b77b4b34593b741864aaa0941fbe9e, type: 3}
+  movementPatternPrefab: {fileID: 1442756322900216131, guid: 13068d10845d1794596b41e7755a173a, type: 3}
+  loops:
+  - {fileID: 11400000, guid: 435e6c65a8bdaaf4e832bae00fd25a91, type: 2}
+  - {fileID: 11400000, guid: 8f11325d78eaa3b43af36e2210101fa3, type: 2}
+  - {fileID: 11400000, guid: 0326f4454e2b66046bdd1b64d92ebff6, type: 2}

@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
             if(startTime >= startDelay)
             {
                 Destroy(levelDisplayInstance.gameObject);
+                GameState.instance.AllowProjectiles();
                 spawner.SpawnWave(levels[GameState.instance.currentLevel].waves[waveCursor]);
             }
         }
@@ -60,6 +61,7 @@ public class LevelManager : MonoBehaviour
     public void GotoNextLevel()
     {
         startTime = 0;
+        GameState.instance.PreventProjectiles();
         levelDisplayInstance = Instantiate(levelDisplayPrefab);
     }
 }

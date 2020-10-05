@@ -10,6 +10,7 @@ public class GameState : MonoBehaviour
     public bool movementAllowed;
     public Ship playerShipPrefab;
     public int currentLevel = 0;
+    public bool canLaunchProjectiles = false;
 
     private void Awake()
     {
@@ -45,5 +46,15 @@ public class GameState : MonoBehaviour
     {
         Ship.DestroyAllShips();
         Projectile.DestroyAllProjectiles();
+    }
+
+    public void AllowProjectiles()
+    {
+        canLaunchProjectiles = true;
+    }
+
+    public void PreventProjectiles()
+    {
+        canLaunchProjectiles = false;
     }
 }

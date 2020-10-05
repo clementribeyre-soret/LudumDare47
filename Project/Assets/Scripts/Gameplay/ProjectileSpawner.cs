@@ -26,7 +26,10 @@ public class ProjectileSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        Projectile spawned = Instantiate(prefab, transform.position, transform.rotation);
-        spawned.team = health.team;
+        if(GameState.instance.canLaunchProjectiles)
+        {
+            Projectile spawned = Instantiate(prefab, transform.position, transform.rotation);
+            spawned.team = health.team;
+        }
     }
 }
