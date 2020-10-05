@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1106676eac8a42b62e0bc50f03a3e, type: 3}
+  m_Name: Enemy 3
+  m_EditorClassIdentifier: 
+  shipPrefab: {fileID: 39222497252203659, guid: 718a08176adfb8e4fa8a3fce29226aba, type: 3}
+  movementPatternPrefab: {fileID: 1442756322900216131, guid: 45600241af31a8b4e97f2640580f1a9e, type: 3}
+  loops:
+  - {fileID: 11400000, guid: ffcf45f5cd3f49841b1216e6f2d96b1c, type: 2}
+  - {fileID: 11400000, guid: 484d9d6bd1e45db4e8298ba6d0d1425e, type: 2}
+  - {fileID: 11400000, guid: 4f3bf7a00bc5a92478f2c8934ecb8b03, type: 2}

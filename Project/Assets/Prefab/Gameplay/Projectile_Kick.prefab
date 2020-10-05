@@ -31,7 +31,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8851084612278811995}
+  - {fileID: 2622382468401825368}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101,6 +101,7 @@ MonoBehaviour:
   speed: 5
   damage: 1
   team: 0
+  destroyAfter: 5
 --- !u!61 &3854233275860970615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &6423979152170756351
+--- !u!1001 &546980069271622652
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -201,12 +202,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3443435236077168100, guid: 5366766e8e574f145ad00f473deb59bd, type: 3}
       propertyPath: m_Name
-      value: Animation_Projectile_Kick_00
+      value: Animation_Projectile_Kick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5366766e8e574f145ad00f473deb59bd, type: 3}
---- !u!4 &8851084612278811995 stripped
+--- !u!4 &2622382468401825368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2590644625436497316, guid: 5366766e8e574f145ad00f473deb59bd, type: 3}
-  m_PrefabInstance: {fileID: 6423979152170756351}
+  m_PrefabInstance: {fileID: 546980069271622652}
   m_PrefabAsset: {fileID: 0}

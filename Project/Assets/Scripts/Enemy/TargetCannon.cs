@@ -12,6 +12,7 @@ public class TargetCannon : MonoBehaviour
 
     void Update()
     {
-        transform.localRotation = Quaternion.Euler(0, 0, Vector3.SignedAngle(Vector3.down, target.transform.position - transform.position, Vector3.forward));
+        if(target != null)
+            transform.localRotation = Quaternion.Euler(0, 0, 180 + Vector3.SignedAngle(Vector3.up, target.transform.position - transform.position, transform.forward));
     }
 }

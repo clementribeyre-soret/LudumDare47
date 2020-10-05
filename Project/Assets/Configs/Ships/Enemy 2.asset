@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipPrefab: {fileID: 39222497252203659, guid: edbd34a50b33b9c4b8a296e3f5378b0f, type: 3}
   movementPatternPrefab: {fileID: 1442756322900216131, guid: 45600241af31a8b4e97f2640580f1a9e, type: 3}
-  loop: {fileID: 11400000, guid: 0326f4454e2b66046bdd1b64d92ebff6, type: 2}
+  loops:
+  - {fileID: 11400000, guid: 6a75c0b70f497724cb40b419c724ce35, type: 2}
+  - {fileID: 11400000, guid: 72bc3c3793811794983a1eb71e9dce25, type: 2}
+  - {fileID: 11400000, guid: 448019aa295c85b448e207206575246c, type: 2}

@@ -37,7 +37,7 @@ public class BeatPlayer : MonoBehaviour
         List<BeatConfig> configs = new List<BeatConfig>();
         for(int i=0; i<BeatService.instance.beats.Length; i++)
         {
-            if(loop.loopContent[i * loop.stepCount + beatIndex % loop.stepCount])
+            if(loop.GetBeatValue(beatIndex % loop.stepCount, i))
             {
                 configs.Add(BeatService.instance.beats[i]);
             }

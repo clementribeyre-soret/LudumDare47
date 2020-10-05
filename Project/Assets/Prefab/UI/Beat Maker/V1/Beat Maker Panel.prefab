@@ -475,9 +475,9 @@ RectTransform:
   m_Father: {fileID: 6351608167899848668}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 400, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6351608167358171047
@@ -617,7 +617,6 @@ MonoBehaviour:
   instrumentTitlePrefab: {fileID: 8717440530382461803, guid: c5731e177bff9f14f8cafc365716eeac, type: 3}
   gridLayout: {fileID: 6351608167358171047}
   player: {fileID: 0}
-  beatPlayerName: Ship
   cursor: {fileID: 0}
 --- !u!114 &6351608167899848656
 MonoBehaviour:

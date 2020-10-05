@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 2
-  screen: Game Screen
+  screen: Level 1
 --- !u!1001 &109207184187626831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -579,6 +579,10 @@ PrefabInstance:
     - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: beatConfigIndex
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
+      propertyPath: maxBeats
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1564253723322899691, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: m_Name
@@ -686,6 +690,10 @@ PrefabInstance:
       propertyPath: beatConfigIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
+      propertyPath: maxBeats
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1564253723322899691, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: m_Name
       value: Beat Panel (1)
@@ -787,6 +795,10 @@ PrefabInstance:
     - target: {fileID: 849381102757405906, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
+      propertyPath: maxBeats
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1564253723322899691, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: m_Name
@@ -893,6 +905,10 @@ PrefabInstance:
     - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: beatConfigIndex
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188190529108740133, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
+      propertyPath: maxBeats
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1564253723322899691, guid: 1d0ed4c1e7579514cab304145adfc295, type: 3}
       propertyPath: m_Name

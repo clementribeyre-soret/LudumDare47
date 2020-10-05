@@ -9,15 +9,26 @@ public class GameState : MonoBehaviour
 
     public bool movementAllowed;
     public Ship playerShipPrefab;
+    public int currentLevel = 0;
 
     private void Awake()
     {
         instance = this;
     }
 
+    public void StartGame()
+    {
+        currentLevel = 0;
+    }
+
     public void SpawnPlayer()
     {
         playerShipInstance = Instantiate(playerShipPrefab);
+    }
+
+    public void RemovePlayer()
+    {
+        Destroy(playerShipInstance.gameObject);
     }
 
     public void BlockMovement()
@@ -28,5 +39,11 @@ public class GameState : MonoBehaviour
     public void ReleaseMovement()
     {
         movementAllowed = true;
+    }
+
+    public void ClearLevel()
+    {
+        Ship.DestroyAllShips();
+        Projectile.DestroyAllProjectiles();
     }
 }
