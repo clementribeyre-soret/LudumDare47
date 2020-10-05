@@ -387,8 +387,8 @@ MonoBehaviour:
   trauma: 0
   traumaDecreaseRate: 1
   traumaPower: 2
-  rollIntensity: 1
-  moveIntensity: 0.1
+  rollIntensity: 2
+  moveIntensity: 0.3
 --- !u!1 &323706862
 GameObject:
   m_ObjectHideFlags: 0

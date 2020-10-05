@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Lvl03_WAve 04
   m_EditorClassIdentifier: 
   toSpawn:
-  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+  - ship: {fileID: 11400000, guid: 2c7e99b7357eb1e4e87fa44e331a76c7, type: 2}
     position: 0
     delay: 0
-    offset: 0
+    offset: 2
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 0
+    delay: 2
+    offset: 4
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 0
+    delay: 2
+    offset: -4

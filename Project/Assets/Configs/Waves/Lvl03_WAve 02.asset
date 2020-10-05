@@ -14,6 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toSpawn:
   - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
-    position: 0
+    position: 1
+    delay: 0
+    offset: -6
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 2
+    delay: 0
+    offset: 4
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 1
+    delay: 0
+    offset: -2
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 2
+    delay: 0
+    offset: 2
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 1
     delay: 0
     offset: 0
