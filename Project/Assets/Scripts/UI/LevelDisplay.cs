@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class LevelDisplay : MonoBehaviour
 {
-    private Text text;
+    public Sprite[] sprites;
+    private Image img;
 
     private void Start()
     {
-        text = GetComponent<Text>();
-        text.text = "Level " + (GameState.instance.currentLevel + 1);
+        img = GetComponent<Image>();
+        img.sprite = sprites[(GameState.instance.currentLevel)];
     }
 }
