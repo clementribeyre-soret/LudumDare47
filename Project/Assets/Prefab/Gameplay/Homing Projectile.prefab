@@ -500,6 +500,7 @@ MonoBehaviour:
   damage: 1
   team: 0
   destroyAfter: 5
+  explosionFXPrefab: {fileID: 1096362277151786402, guid: cc56b875a7328f8458100d7987b1a054, type: 3}
 --- !u!61 &3854233275860970615
 BoxCollider2D:
   m_ObjectHideFlags: 0
