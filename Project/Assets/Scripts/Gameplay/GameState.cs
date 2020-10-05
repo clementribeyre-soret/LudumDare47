@@ -12,6 +12,8 @@ public class GameState : MonoBehaviour
     public int currentLevel = 0;
     public bool canLaunchProjectiles = false;
 
+    public bool skipIntro = false;
+
     private void Awake()
     {
         instance = this;

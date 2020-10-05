@@ -39,7 +39,12 @@ public class IntroManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AnimCoroutine());
+        if(GameState.instance.skipIntro)
+        {
+            nextLevel.StartTransition();
+        }
+        else
+            StartCoroutine(AnimCoroutine());
     }
 
     void Update()
