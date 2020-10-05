@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d9c5305ecef574bb4d0f0372b99a21, type: 3}
+  m_Name: Lvl02_WAve 04
+  m_EditorClassIdentifier: 
+  toSpawn:
+  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
+    position: 0
+    delay: 0
+    offset: 0

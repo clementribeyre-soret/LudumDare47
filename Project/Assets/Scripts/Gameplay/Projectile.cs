@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     public float destroyAfter = 5;
     private float lifeTime;
     private static List<Projectile> projectiles = new List<Projectile>();
+    public Transform explosionFXPrefab;
 
     private void Start()
     {
@@ -33,7 +34,7 @@ public class Projectile : MonoBehaviour
     {
         transform.position += transform.up * speed * Time.deltaTime;
         lifeTime += Time.deltaTime;
-        if(lifeTime > destroyAfter)
+        if(destroyAfter > 0 && lifeTime > destroyAfter)
             Destroy(gameObject);
     }
 
@@ -45,6 +46,10 @@ public class Projectile : MonoBehaviour
         if(health != null && team != health.team)
         {
             health.Damage(damage);
+            if(explosionFXPrefab != null)
+            {
+                Instantiate(explosionFXPrefab, transform.position, transform.rotation);
+            }
             Destroy(gameObject);
         }
     }

@@ -99,8 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  damage: 1
+  damage: 2
   team: 0
+  destroyAfter: 5
+  explosionFXPrefab: {fileID: 2461116487824325981, guid: 6d01a2da7aed43145a5c401f5e4792f7, type: 3}
 --- !u!61 &3854233275860970615
 BoxCollider2D:
   m_ObjectHideFlags: 0

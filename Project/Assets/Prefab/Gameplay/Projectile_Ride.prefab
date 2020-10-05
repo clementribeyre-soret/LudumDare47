@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3854233275860970615}
   - component: {fileID: 2438699893407218446}
   m_Layer: 0
-  m_Name: Test Projectile
+  m_Name: Projectile_Ride
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,6 +100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   damage: 1
+  team: 0
+  destroyAfter: 5
+  explosionFXPrefab: {fileID: 7700385731574560158, guid: 9fb05d0df3e7de24b9c7132e9d642916, type: 3}
 --- !u!61 &3854233275860970615
 BoxCollider2D:
   m_ObjectHideFlags: 0
