@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7688764986270734561}
   - component: {fileID: 5897516166347533860}
   m_Layer: 0
-  m_Name: Particles_SpaceClouds_02 (1)
+  m_Name: Particles_SpaceClouds_02_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &7688764986270734561
 ParticleSystem:
@@ -4786,7 +4786,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -441000771
   m_SortingLayer: -4
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
@@ -9654,7 +9654,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &4990804477491237151
 ParticleSystem:
@@ -14410,14 +14410,14 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1747965907
   m_SortingLayer: 1
-  m_SortingOrder: 11
+  m_SortingOrder: 12
   m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
   m_MaxParticleSize: 1
   m_CameraVelocityScale: 0
-  m_VelocityScale: 0.89
-  m_LengthScale: 1
+  m_VelocityScale: 1
+  m_LengthScale: -3.27
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -28884,7 +28884,7 @@ GameObject:
   - component: {fileID: 3331455964069554222}
   - component: {fileID: 4634731244275238774}
   m_Layer: 0
-  m_Name: Particles_SpaceClouds_02 (3)
+  m_Name: Particles_SpaceClouds_02_G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28902,7 +28902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &3331455964069554222
 ParticleSystem:
@@ -33658,7 +33658,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -441000771
   m_SortingLayer: -4
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
@@ -52906,14 +52906,14 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1747965907
   m_SortingLayer: 1
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
   m_MaxParticleSize: 1
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 44.02
+  m_LengthScale: 10
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -57790,10 +57790,10 @@ Transform:
   - {fileID: 7058605368089839219}
   - {fileID: 903372626871419898}
   - {fileID: 7675370243877819646}
-  - {fileID: 6951481547539062164}
   - {fileID: 4474593626428606085}
   - {fileID: 5639290590772030487}
   - {fileID: 3513757906885661445}
+  - {fileID: 6951481547539062164}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67659,8 +67659,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 0.5803922}
-      maxColor: {r: 0.07058824, g: 1, b: 1, a: 0.16862746}
+      minColor: {r: 1, g: 1, b: 1, a: 0.24705882}
+      maxColor: {r: 0.07058824, g: 1, b: 1, a: 0.11372549}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -72344,7 +72344,7 @@ GameObject:
   - component: {fileID: 7954086403140329655}
   - component: {fileID: 3687358184189376797}
   m_Layer: 0
-  m_Name: Particles_SpaceClouds_02 (2)
+  m_Name: Particles_SpaceClouds_02_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72362,7 +72362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5805798781630403200}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -270, y: 180, z: -0.015991211}
 --- !u!198 &7954086403140329655
 ParticleSystem:
@@ -77118,7 +77118,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -441000771
   m_SortingLayer: -4
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
