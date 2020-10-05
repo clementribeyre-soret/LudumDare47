@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2d9c5305ecef574bb4d0f0372b99a21, type: 3}
-  m_Name: Lvl01_Wave 01
+  m_Name: Lvl03_WAve 01
   m_EditorClassIdentifier: 
   toSpawn:
   - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
-    position: 1
+    position: 0
     delay: 0
-    offset: 3
-  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
-    position: 2
-    delay: 0
-    offset: -1.5
+    offset: 0
