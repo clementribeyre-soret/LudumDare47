@@ -11,6 +11,8 @@ public class BeatButton : MonoBehaviour
     public float fadeOutTime;
     public float fadeOutDuration = 0.5f;
     public Toggle toggle;
+    public bool isDisabled;
+    public GameObject disabledSprite;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class BeatButton : MonoBehaviour
 
     void Update()
     {
+        disabledSprite.SetActive(isDisabled);
         if(fadeOutTime > 0)
         {
             fadeOutTime -= Time.deltaTime;

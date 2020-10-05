@@ -25,8 +25,13 @@ public class BeatMakerPanel : MonoBehaviour
             toggle.index = i + beatConfigIndex * buttons.Length;
             toggle.ForceChecked(player.loop.GetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount));
             toggle.valueChanged += OnValueChanged;
+            if(checkedCount >= maxBeats)
+            {
+                buttons[i].isDisabled = true;
+            }
         }
         knobText.text = "" + (maxBeats - checkedCount);
+        
     }
 
     private int checkedCount {get {
@@ -49,6 +54,8 @@ public class BeatMakerPanel : MonoBehaviour
         }
         else
             player.loop.SetBeatValue(toggle.index % player.loop.stepCount, toggle.index / player.loop.stepCount, toggle.isChecked);
+        for(int i=0; i<buttons.Length; i++)
+            buttons[i].isDisabled = checkedCount >= maxBeats;
         knobText.text = "" + (maxBeats - checkedCount);
     }
 
