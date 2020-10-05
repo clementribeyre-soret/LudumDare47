@@ -26,6 +26,11 @@ public class GameState : MonoBehaviour
         playerShipInstance = Instantiate(playerShipPrefab);
     }
 
+    public void RemovePlayer()
+    {
+        Destroy(playerShipInstance.gameObject);
+    }
+
     public void BlockMovement()
     {
         movementAllowed = false;
@@ -34,5 +39,11 @@ public class GameState : MonoBehaviour
     public void ReleaseMovement()
     {
         movementAllowed = true;
+    }
+
+    public void ClearLevel()
+    {
+        Ship.DestroyAllShips();
+        Projectile.DestroyAllProjectiles();
     }
 }

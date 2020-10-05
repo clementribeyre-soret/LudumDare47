@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy 1 Loop 1
   m_EditorClassIdentifier: Assembly-CSharp::Loop
   stepCount: 8
-  kick: 0100000001000000
+  kick: 0000000000000000
   crash: 0000000000000000
   snare: 0000000000000000
   ride: 0000000000000000

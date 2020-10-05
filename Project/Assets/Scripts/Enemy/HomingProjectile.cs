@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class HomingProjectile : MonoBehaviour
 {
-    
+    private Ship target;
     void Start()
     {
-        
+        target = GameState.instance.playerShipInstance;
     }
 
     void Update()
     {
-        
+        if(target != null)
+            transform.localRotation = Quaternion.Euler(0, 0, Vector3.SignedAngle(Vector3.up, target.transform.position - transform.position, transform.forward));
     }
 }

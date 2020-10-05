@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class LevelManager : MonoBehaviour
     private Transform levelDisplayInstance;
     public float startDelay = 3;
     private float startTime = 0;
+
+    public UnityEvent onVictory;
 
     void Start()
     {
@@ -38,8 +41,15 @@ public class LevelManager : MonoBehaviour
         if(waveCursor >= levels[GameState.instance.currentLevel].waves.Length)
         {
             GameState.instance.currentLevel++;
-            waveCursor = 0;
-            GotoNextLevel();
+            if(GameState.instance.currentLevel >= levels.Length)
+            {
+                onVictory.Invoke();
+            }
+            else
+            {
+                waveCursor = 0;
+                GotoNextLevel();
+            }
         }
         else
         {

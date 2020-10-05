@@ -9,6 +9,25 @@ public class Projectile : MonoBehaviour
     public Team team;
     public float destroyAfter = 5;
     private float lifeTime;
+    private static List<Projectile> projectiles = new List<Projectile>();
+
+    private void Start()
+    {
+        projectiles.Add(this);
+    }
+
+    private void OnDestroy()
+    {
+        projectiles.Remove(this);
+    }
+
+    public static void DestroyAllProjectiles()
+    {
+        foreach(Projectile projectile in projectiles)
+        {
+            Destroy(projectile.gameObject);
+        }
+    }
 
     void Update()
     {
