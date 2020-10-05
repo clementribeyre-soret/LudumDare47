@@ -41,7 +41,3 @@ MonoBehaviour:
     position: 0
     delay: 1.5
     offset: 4
-  - ship: {fileID: 11400000, guid: 80efd6e81122cef48bf23f728e80c414, type: 2}
-    position: 0
-    delay: 0
-    offset: 0
