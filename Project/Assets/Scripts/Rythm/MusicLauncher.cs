@@ -9,6 +9,7 @@ public class MusicLauncher : MonoBehaviour
         if(playOnStart)
             PlayMusic();
     }
+    
     public void PlayMusic()
     {
         BeatService.instance.PlayMusicImmediately(music);

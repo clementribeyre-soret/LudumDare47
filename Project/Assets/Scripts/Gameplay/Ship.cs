@@ -15,6 +15,8 @@ public class Ship : MonoBehaviour
         Instantiate(config.movementPatternPrefab, transform);
         player.loop = config.loops[Mathf.Min(GameState.instance.currentLevel, config.loops.Length - 1)];
         ships.Add(this);
+        GetComponent<Health>().maxHealth = config.health;
+        GetComponent<Health>().currentHealth = config.health;
     }
 
     private void OnDestroy()
