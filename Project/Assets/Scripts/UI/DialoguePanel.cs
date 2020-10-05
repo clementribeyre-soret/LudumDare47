@@ -9,10 +9,22 @@ public class DialoguePanel : MonoBehaviour
     public Text text;
     private int index = 0;
     public System.Action onDialogueEnd;
+    private float endTimer = 0;
+    public Animator animator;
     void Start()
     {
         text.text = textLines[0];
         index++;
+    }
+
+    private void Update()
+    {
+        if(endTimer > 0)
+        {
+            endTimer -= Time.deltaTime;
+            if(endTimer <= 0)
+                onDialogueEnd?.Invoke();
+        }
     }
     public void Next()
     {
@@ -21,6 +33,10 @@ public class DialoguePanel : MonoBehaviour
             text.text = textLines[index];
             index++;
         }
-        else onDialogueEnd?.Invoke();
+        else
+        {
+            endTimer = 1;
+            animator.SetTrigger("Close");
+        }
     }
 }
