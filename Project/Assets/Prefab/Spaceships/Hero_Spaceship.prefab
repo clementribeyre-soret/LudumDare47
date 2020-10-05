@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &531904483519191693
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &1200803293557762590
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &1480541018032056092
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672e280d3e9bc204bab65e5c9f4883de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathAnimPrefab: {fileID: 2465413783210219379, guid: 270c590052c760c429a11e65a95ae6f8, type: 3}
+  deathAnimPrefab: {fileID: 2465413783210219379, guid: c4895b8f2e2484f4e82e1df4b2720dcd, type: 3}
   shipSprite: {fileID: 1035870896261376296}
 --- !u!1 &2900222886902408655
 GameObject:
@@ -678,6 +681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &3007690430600516193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &4731610676728519104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &5141630441536422005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &5771356064872261699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &5995022946146969410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &6675936967051842704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,6 +1801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &7243549229738723506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
+  intensityDecreaseSpeed: 2
 --- !u!1 &8046205269181293027
 GameObject:
   m_ObjectHideFlags: 0

@@ -87,4 +87,11 @@ public class MusicPlayer : MonoBehaviour
 
         }
     }
+
+    public void PlayImmediately(AudioClip clip)
+    {
+        source.Stop();
+        source.clip = clip;
+        source.Play();
+    }
 }
