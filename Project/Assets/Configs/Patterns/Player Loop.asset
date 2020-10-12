@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Loop
   stepCount: 8
   kick: 0100000000000000
-  crash: 0001000000000000
-  snare: 0000010001000000
-  ride: 0100010001000100
+  crash: 0000000000000000
+  snare: 0000010000000000
+  ride: 0000000000000000

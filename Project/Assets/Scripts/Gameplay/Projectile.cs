@@ -45,7 +45,9 @@ public class Projectile : MonoBehaviour
             health = other.GetComponentInParent<Health>();
         if(health != null && team != health.team)
         {
-            health.Damage(damage);
+            PlayerHitbox playerHitbox = health.GetComponent<PlayerHitbox>();
+            if(playerHitbox == null || !playerHitbox.isInvincible)
+                health.Damage(damage);
             if(explosionFXPrefab != null)
             {
                 Instantiate(explosionFXPrefab, transform.position, transform.rotation);

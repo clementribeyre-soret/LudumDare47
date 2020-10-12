@@ -8,7 +8,7 @@ public class BeatPlayer : MonoBehaviour
     private float musicLastTime = 0;
     public bool resetLoop = true;
 
-    public float loopRatio { get {float result = BeatService.instance.time / (loop.stepCount * BeatService.instance.beatDuration); return result - Mathf.Floor(result);}}
+    public float loopRatio { get {double result = BeatService.instance.time / (loop.stepCount * BeatService.instance.beatDuration); return (float)result - Mathf.Floor((float)result);}}
 
     public System.Action<int, List<BeatConfig>> onBeat;
 

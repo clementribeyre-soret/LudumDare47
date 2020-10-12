@@ -9,15 +9,13 @@ public class BeatService : MonoBehaviour
 
     public BeatConfig[] beats;
     public float bpm;
-    private float _time;
-    public float time { get { return _time + beatIndex * 60/bpm;}}
+    private double _time;
+    public double time { get { return _time + beatIndex * 60/bpm;}}
     public float beatDuration { get { return 60/bpm; }}
     private int beatIndex = 0;
     private AudioSource[] sources;
     public AudioSource sourcePrefab;
-
-    public MusicPlayer musicPlayer;
-    private float musicLastTime = 0;
+    private double musicLastTime = 0;
 
     public System.Action<int> onBeat;
     
@@ -27,7 +25,7 @@ public class BeatService : MonoBehaviour
 
     void Update()
     {
-        float musicTime = musicPlayer.time;
+        double musicTime = AudioSettings.dspTime;
         if(musicLastTime > musicTime)
         {
             musicLastTime = 0;
@@ -36,22 +34,12 @@ public class BeatService : MonoBehaviour
         }
         _time += musicTime - musicLastTime;
         musicLastTime = musicTime;
-        if(_time > 60 / bpm)
+        while(_time > 60 / bpm)
         {
             beatIndex = beatIndex + 1;
             _time -= 60/bpm;
-            onBeat?.Invoke(beatIndex);
+            onBeat?.Invoke(beatIndex - AudioScheduler.instance.musicStartBeat);
 
         }
-    }
-
-    public void PlayMusic(AudioClip music)
-    {
-        musicPlayer.Play(music);
-    }
-
-    public void PlayMusicImmediately(AudioClip music)
-    {
-        musicPlayer.PlayImmediately(music);
     }
 }

@@ -299,9 +299,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 453965607}
-        m_TargetAssemblyTypeName: BeatService, Assembly-CSharp
-        m_MethodName: PlayMusic
+      - m_Target: {fileID: 836612182}
+        m_TargetAssemblyTypeName: AudioScheduler, Assembly-CSharp
+        m_MethodName: ScheduleMusic
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 588d5bab570482944a00e5498591f374, type: 3}
@@ -502,12 +502,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 836612182}
+        m_TargetAssemblyTypeName: AudioScheduler, Assembly-CSharp
+        m_MethodName: ScheduleMusic
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 6af4aec536b556b4e88d6dd7696787f6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   exitEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453965607}
-        m_TargetAssemblyTypeName: BeatService, Assembly-CSharp
-        m_MethodName: PlayMusic
+      - m_Target: {fileID: 836612182}
+        m_TargetAssemblyTypeName: AudioScheduler, Assembly-CSharp
+        m_MethodName: ScheduleMusic
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 8ec88df368707c64e9ffee21c10a66a3, type: 3}
@@ -566,7 +578,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4cf68294b27c9924883b426e48e12209, type: 2}
   bpm: 240
   sourcePrefab: {fileID: 6589645273293194761, guid: e9e4c2bbbf8072945b4f778e172e4654, type: 3}
-  musicPlayer: {fileID: 836612182}
 --- !u!4 &453965608
 Transform:
   m_ObjectHideFlags: 0
@@ -598,6 +609,7 @@ MonoBehaviour:
   playerShipPrefab: {fileID: 6220766578043452857, guid: 54e474142206e3b4abef443bf429f41b, type: 3}
   currentLevel: 0
   canLaunchProjectiles: 0
+  skipIntro: 0
 --- !u!1 &464637181
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,11 +704,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 836612181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba4fb4ee2e523cb4e968b35655294f89, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b6eb04c6920fc34e861cf9fb84f100b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlaying: 0
-  pendingClipDuration: 1
+  startMusicClip: {fileID: 8300000, guid: 588d5bab570482944a00e5498591f374, type: 3}
+  musicSource: {fileID: 836612183}
+  bpm: 240
+  barCount: 4
+  musicStartBeat: 0
 --- !u!82 &836612183
 AudioSource:
   m_ObjectHideFlags: 0
@@ -711,7 +726,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

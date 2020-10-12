@@ -12,6 +12,6 @@ public class MusicLauncher : MonoBehaviour
     
     public void PlayMusic()
     {
-        BeatService.instance.PlayMusicImmediately(music);
+        AudioScheduler.instance.ScheduleMusic(music);
     }
 }

@@ -71,6 +71,13 @@ public class MusicPlayer : MonoBehaviour
                 sourcePlaying = false;
             }
         }
+        float loopLength = 8 * 60 / BeatService.instance.bpm;
+        int loopCount = Mathf.FloorToInt(source.clip.length / loopLength);
+        if(source.time > loopCount * loopLength)
+        {
+            source.time -= loopCount * loopLength;
+        }
+
     }
 
     public void Play(AudioClip clip)
