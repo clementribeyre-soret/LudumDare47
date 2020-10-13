@@ -62,6 +62,7 @@ public class LevelManager : MonoBehaviour
     {
         startTime = 0;
         GameState.instance.PreventProjectiles();
+        Projectile.DestroyProjectiles(Team.Enemy);
         levelDisplayInstance = Instantiate(levelDisplayPrefab);
     }
 }

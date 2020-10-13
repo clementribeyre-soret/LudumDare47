@@ -28,6 +28,19 @@ public class Projectile : MonoBehaviour
         {
             Destroy(projectile.gameObject);
         }
+        projectiles.Clear();
+    }
+
+    public static void DestroyProjectiles(Team team)
+    {
+        List<Projectile> newProjectiles = new List<Projectile>();
+        foreach(Projectile projectile in projectiles)
+        {
+            if(projectile.team == team)
+                Destroy(projectile.gameObject);
+            else newProjectiles.Add(projectile);
+        }
+        projectiles = new List<Projectile>();
     }
 
     void Update()
